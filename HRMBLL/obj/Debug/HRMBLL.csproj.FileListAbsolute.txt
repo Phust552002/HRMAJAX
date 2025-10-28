@@ -118,3 +118,16 @@ C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.cspro
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.csproj.CopyComplete
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.dll
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\HRMBLL.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\HRMBLL.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\HRMDAL.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\HRMUtil.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\stdole.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\HRMDAL.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\HRMDAL.dll.config
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\bin\Debug\HRMUtil.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\obj\Debug\HRMBLL.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\obj\Debug\HRMBLL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\obj\Debug\HRMBLL.csproj.Up2Date
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\obj\Debug\HRMBLL.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMBLL\obj\Debug\HRMBLL.pdb

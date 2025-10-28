@@ -84,3 +84,15 @@ C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.csp
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.csproj.CopyComplete
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.dll
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\bin\Debug\HRMUtil.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\bin\Debug\HRMUtil.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\bin\Debug\Telerik.WinControls.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\bin\Debug\TelerikCommon.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\bin\Debug\Telerik.WinControls.xml
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\obj\Debug\HRMUtil.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\obj\Debug\HRMUtil.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\obj\Debug\HRMUtil.csproj.Up2Date
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\obj\Debug\HRMUtil.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMUtil\obj\Debug\HRMUtil.pdb

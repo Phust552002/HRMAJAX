@@ -96,3 +96,13 @@ C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.cspro
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.csproj.CopyComplete
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.dll
 C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\bin\Debug\HRMDAL.dll.config
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\bin\Debug\HRMDAL.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\bin\Debug\HRMDAL.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\bin\Debug\HRMUtil.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\bin\Debug\HRMUtil.pdb
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\obj\Debug\HRMDAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\obj\Debug\HRMDAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\obj\Debug\HRMDAL.csproj.Up2Date
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\obj\Debug\HRMDAL.dll
+C:\Users\Admin\Documents\GitHub\HRMAJAX\HRMDAL\obj\Debug\HRMDAL.pdb
