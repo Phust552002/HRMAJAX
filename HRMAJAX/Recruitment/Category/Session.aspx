@@ -1,0 +1,234 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/HRM.master" AutoEventWireup="true" CodeFile="Session.aspx.cs" Inherits="Recruitment_Category_Session" Title="SAGS :: HUMAN RESOURCES MANAGEMENT" %>
+
+<%@ Register Src="../../UserControls/CalendarPicker.ascx" TagName="CalendarPicker"
+    TagPrefix="uc1" %>
+
+<%@ Register Src="~/UserControls/ucTitle.ascx" TagName="ucTitle" TagPrefix="uc2" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<table style="width: 100%">
+        <tr>
+            <td valign="top" >
+                <table style="width: 100%">
+                    <tr>
+                        <td valign="top" >
+                            <uc2:ucTitle ID="UcTitle1" runat="server" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td valign="top" align="right">
+                            <asp:CheckBox ID="chkHideAddSession" runat="server" AutoPostBack="True" CssClass="value" OnCheckedChanged="chkHideAddSession_CheckedChanged" Text="Thêm mới" />
+                            <asp:Panel ID="pnlAddSession" runat="server" Width="100%" Visible="False">
+                                <fieldset>
+                                <legend class="legend">Định Nghĩa Đợt Tuyển Dụng Mới</legend>                              
+                                 <table style="width: 100%;"class="tableBorder">
+                                        <tr>
+                                            <td class="tdLabel">
+                                                <asp:Label ID="Label3" runat="server" CssClass="label" Text="Tên đợt tuyển dụng "></asp:Label></td>
+                                            <td class="tdValue">
+                                                <asp:TextBox ID="txtName" runat="server" Width="200px" CssClass="textBox"></asp:TextBox></td>
+                                        </tr>
+                                     <tr>
+                                         <td class="tdLabel">
+                                             <asp:Label ID="Label1" runat="server" CssClass="label" Text="Từ ngày"></asp:Label></td>
+                                         <td class="tdValue">
+                                             <uc1:CalendarPicker ID="cpFromDate" runat="server" />
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <td class="tdLabel">
+                                             <asp:Label ID="Label2" runat="server" CssClass="label" Text="Đến ngày"></asp:Label></td>
+                                         <td class="tdValue">
+                                             <uc1:CalendarPicker ID="cpToDateDate" runat="server" />
+                                         </td>
+                                     </tr>
+                                        <tr>
+                                            <td class="tdLabel">
+                                                <asp:Label ID="Label4" runat="server" CssClass="label" Text="Ghi chú"></asp:Label></td>
+                                            <td class="tdValue">
+                                                <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" Width="300px" CssClass="textBox"></asp:TextBox></td>
+                                        </tr>
+                                     <tr>
+                                         <td class="tdLabel">
+                                             <asp:Label ID="Label5" runat="server" CssClass="label" Text="Loại tuyển dụng"></asp:Label></td>
+                                         <td class="tdValue">
+                                             <asp:DropDownList ID="ddlSessionType" runat="server" CssClass="dropDownList" DataSourceID="ObjectDataSource2"
+                                                 DataTextField="RTypeName" DataValueField="RTypeId">
+                                             </asp:DropDownList>
+                                             <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="GetAllSessionType"
+                                                 TypeName="HRMUtil.Constants"></asp:ObjectDataSource>
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <td class="tdLabel">
+                                             <asp:Label ID="Label6" runat="server" CssClass="label" Text="Chức danh ứng tuyển"></asp:Label></td>
+                                         <td class="tdValue">
+                                            <table>
+	                                            <tr>
+		                                            <td align="left">
+                                                        <asp:Label ID="Label7" runat="server" CssClass="value" Text="Chức danh"></asp:Label></td>
+		                                            <td>&nbsp;</td>
+		                                            <td align="left">
+                                                        <asp:Label ID="Label8" runat="server" CssClass="value" Text="Chức danh đã chọn"></asp:Label></td>
+	                                            </tr>
+	                                            <tr>
+		                                            <td>
+                                                        <!-- Ô search chức danh -->
+                                                        <%--<asp:TextBox ID="txtSearchPosition" runat="server" 
+                                                            CssClass="textBox" Width="300"
+                                                            AutoPostBack="true" 
+                                                            OnTextChanged="txtSearchPosition_TextChanged"
+                                                            Placeholder="Tìm kiếm chức danh..." />
+                                                        <br />--%>
+                                                        <!-- Ô search chức danh -->
+                                                        <input type="text" id="txtSearchPosition" placeholder="Tìm kiếm chức danh..." 
+                                                               style="width:300px; margin-bottom:5px;" onkeyup="filterPositions()" />
+                                                        <br />
+			                                            <asp:ListBox id="lstPositions" Runat="Server" Width="350" SelectionMode="Multiple" CssClass="textBox" Rows="8" Height="200px" />
+		                                            </td>
+		                                            <td>
+			                                            <asp:Button Text="->" style="FONT:9pt Courier" Runat="server" id="btnSelect" CssClass="small color green button" OnClick="btnSelect_Click" />
+			                                            <br/>
+			                                            <asp:Button Text="<-" style="FONT:9pt Courier" Runat="server" id="btnRemove" CssClass="small color green button" OnClick="btnRemove_Click" />
+		                                            </td>
+		                                            <td>
+			                                            <asp:ListBox id="lstSelectedPositions" Runat="Server" Width="350" SelectionMode="Multiple" CssClass="textBox" Rows="8" Height="200px" />
+		                                            </td>
+	                                            </tr>
+                                            </table>
+                                         </td>
+                                     </tr>
+                                        <tr>
+                                            <td colspan="2" class="tdButton" align="center">                                                 
+                                                <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Thêm Mới" CssClass="small color green button" Width="100px" />                                                                                                             
+                                            </td>
+                                            
+                                        </tr>
+                                    </table>                                       
+                            </fieldset>
+                            </asp:Panel>
+                         </td>
+                    </tr>
+                    
+                    <tr>
+                        <td valign="top" >
+                            <fieldset>
+                                <legend class="legend">Danh Sách Các Đợt Tuyển Dụng</legend>
+                                <table style="width: 100%;">                        
+                                    <tr>
+                                        <td>
+                                        <table class="tableBorder" width="100%">
+                                             <tr>
+                                                <td>  
+                                                    <asp:GridView ID="grdSessions" runat="server" AutoGenerateColumns="False" AllowPaging="True" PageSize="20" CssClass="grid-Border" Width="100%" DataSourceID="ObjectDataSource1" DataKeyNames="Id">                                                        
+                                                        <Columns>
+                                                            <asp:TemplateField HeaderText="Đợt tuyển dụng" SortExpression="Name">
+                                                                <EditItemTemplate>
+                                                                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Name") %>' Width="95%" CssClass="textBox"></asp:TextBox>
+                                                                </EditItemTemplate>
+                                                                <ItemTemplate>
+                                                                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("Name") %>'></asp:Label>
+                                                                </ItemTemplate>
+                                                            </asp:TemplateField>
+                                                            <asp:TemplateField HeaderText="Từ ng&#224;y" SortExpression="FromDate">
+                                                                <EditItemTemplate>
+                                                                    <uc1:CalendarPicker ID="CalendarPicker1" runat="server" SelectedDate='<%# Bind("FromDate") %>'/>
+                                                                </EditItemTemplate>                                                                
+                                                                <ItemTemplate>
+                                                                    <asp:Label ID="Label2" runat="server" Text='<%# Bind("FromDate", "{0:dd/MM/yyyy}") %>'></asp:Label>
+                                                                </ItemTemplate>
+                                                                <ItemStyle HorizontalAlign="Center" Width="10%"/>
+                                                            </asp:TemplateField>
+                                                            <asp:TemplateField HeaderText="Đến ng&#224;y" SortExpression="ToDate">
+                                                                <EditItemTemplate>
+                                                                    <uc1:CalendarPicker ID="CalendarPicker2" runat="server" SelectedDate='<%# Bind("ToDate") %>'/>
+                                                                </EditItemTemplate>                                                                
+                                                                <ItemTemplate>
+                                                                    <asp:Label ID="Label3" runat="server" Text='<%# Bind("ToDate", "{0:dd/MM/yyyy}") %>'></asp:Label>
+                                                                </ItemTemplate>
+                                                                <ItemStyle HorizontalAlign="Center" Width="10%"/>
+                                                            </asp:TemplateField>
+                                                            <asp:TemplateField HeaderText="Loại tuyển dụng" SortExpression="SessionTypeName">
+                                                                <EditItemTemplate>
+                                                                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropDownList" DataSourceID="ObjectDataSource3"
+                                                                        DataTextField="RTypeName" DataValueField="RTypeId" SelectedValue='<%# Bind("SessionType") %>'>
+                                                                    </asp:DropDownList>
+                                                                    <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="GetAllSessionType"
+                                                                        TypeName="HRMUtil.Constants"></asp:ObjectDataSource>
+                                                                </EditItemTemplate>
+                                                                <ItemTemplate>
+                                                                    <asp:Label ID="Label5" runat="server" Text='<%# Bind("SessionTypeName") %>'></asp:Label>
+                                                                </ItemTemplate>
+                                                            </asp:TemplateField>
+                                                            <asp:TemplateField HeaderText="Ghi ch&#250;" SortExpression="Remark">
+                                                                <EditItemTemplate>
+                                                                    <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Remark") %>' TextMode="MultiLine"
+                                                                        Width="95%" CssClass="textBox"></asp:TextBox>
+                                                                </EditItemTemplate>
+                                                                <ItemTemplate>
+                                                                    <asp:Label ID="Label4" runat="server" Text='<%# Bind("Remark") %>'></asp:Label>
+                                                                </ItemTemplate>
+                                                                <ItemStyle HorizontalAlign="Center" Width="30%"/>
+                                                            </asp:TemplateField>
+                                                            <asp:TemplateField HeaderText="Thao t&#225;c" ShowHeader="False">
+                                                                <ItemTemplate>
+                                                                    <asp:ImageButton ID="ImageButton2" runat="server" CausesValidation="False" CommandName="Delete" ImageUrl="~/Images/icon-delete.gif" OnClientClick="return confirm('Bạn có muốn xóa đợt tuyển dụng này ?');"/>
+                                                                </ItemTemplate>
+                                                                <ItemStyle HorizontalAlign="Center" />
+                                                            </asp:TemplateField>  
+                                                        </Columns>
+                                                         <HeaderStyle CssClass="grid-header" /> 
+                                                        <RowStyle CssClass ="grid-item" />
+                                                        <AlternatingRowStyle CssClass="grid-atlternating-item" />    
+                                                        <PagerStyle CssClass="grid-paper" /> 
+                                                    </asp:GridView>                                                    
+                                                    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetAll"
+                                                        TypeName="HRMBLL.H2.SessionsBLL" UpdateMethod="Update" DeleteMethod="Delete">
+                                                        <UpdateParameters>
+                                                            <asp:Parameter Name="name" Type="String" />
+                                                            <asp:Parameter Name="fromDate" Type="String" />
+                                                            <asp:Parameter Name="toDate" Type="String" />
+                                                            <asp:Parameter Name="remark" Type="String" />
+                                                            <asp:Parameter Name="sessionType" Type="Int32" />
+                                                            <asp:Parameter Name="id" Type="Int32" />
+                                                        </UpdateParameters>
+                                                        <DeleteParameters>
+                                                            <asp:Parameter Name="id" Type="Int32" />
+                                                        </DeleteParameters>
+                                                    </asp:ObjectDataSource>
+                                                </td>
+                                            </tr>
+                                        </table> 
+                                        </td>
+                                    </tr>
+                                </table>        
+                            </fieldset>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+</table>
+
+    <script>
+        function filterPositions() {
+            var input = document.getElementById("txtSearchPosition");
+            var filter = input.value.toLowerCase();
+            var listBox = document.getElementById("<%= lstPositions.ClientID %>");
+
+            for (var i = 0; i < listBox.options.length; i++) {
+                var txt = listBox.options[i].text.toLowerCase();
+                if (txt.includes(filter)) {
+                    listBox.options[i].style.display = "";
+                } else {
+                    listBox.options[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</asp:Content>
+

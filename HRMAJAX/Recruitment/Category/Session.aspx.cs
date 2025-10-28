@@ -1,0 +1,130 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+using HRMUtil;
+using HRMBLL.H2;
+using HRMBLL.H0;
+using HRMUtil.KeyNames.H0;
+using System.Linq;
+
+public partial class Recruitment_Category_Session : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            UcTitle1.Text = Constants.TITLE_SESSION_CATEGORY;
+            BindDataToListPosition();
+        }
+    }
+
+    //private int SessionId
+    //{
+    //    set { ViewState["SessionId"] = value; }
+    //    get
+    //    {
+    //        if (ViewState["SessionId"] != null)
+    //        {
+    //            return int.Parse(ViewState["SessionId"].ToString());
+    //        }
+    //        else
+    //        {
+    //            return 0;
+    //        }
+    //    }
+    //}
+
+    protected void btnAdd_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            long SessionId = 0;
+            SessionsBLL s = new SessionsBLL();
+            s.Name = txtName.Text;
+            s.FromDate = cpFromDate.SelectedDate;
+            s.ToDate = cpToDateDate.SelectedDate;
+            s.Remark = txtDescription.Text;
+            s.SessionType = int.Parse(ddlSessionType.SelectedValue);
+            SessionId = s.Save();
+            grdSessions.DataBind();
+
+            //SessionsBLL.DeleteBySessionId(SessionId);
+            foreach (ListItem item in lstSelectedPositions.Items)
+            {
+                SessionsBLL.InsertSessionPosition(int.Parse(item.Value), (int)SessionId, string.Empty);
+            }
+
+            txtName.Text = string.Empty;
+            txtDescription.Text = string.Empty;
+            BindDataToListPosition(); lstSelectedPositions.Items.Clear();
+
+        }
+        catch (Exception ex)
+        {
+            UcTitle1.ErrorText = ex.Message;
+        }
+    }
+    protected void chkHideAddSession_CheckedChanged(object sender, EventArgs e)
+    {
+        pnlAddSession.Visible = chkHideAddSession.Checked;
+    }
+
+    private void BindDataToListPosition()
+    {
+        lstPositions.DataSource = PositionsBLL.GetAll();
+        lstPositions.DataTextField = PositionKeys.FIELD_POSITION_NAME;
+        lstPositions.DataValueField = PositionKeys.FIELD_POSITION_ID;
+        lstPositions.DataBind();
+
+    }
+    //protected void txtSearchPosition_TextChanged(object sender, EventArgs e)
+    //{
+    //    string keyword = txtSearchPosition.Text.Trim().ToLower();
+
+    //    var allPositions = PositionsBLL.GetAll(); // Trả về List<Position>
+
+    //    var filtered = allPositions
+    //        .Where(p => p.PositionName.ToLower().Contains(keyword))
+    //        .ToList();
+
+    //    lstPositions.Items.Clear();
+    //    foreach (var pos in filtered)
+    //    {
+    //        lstPositions.Items.Add(new ListItem(pos.PositionName, pos.PositionId.ToString()));
+    //    }
+    //}
+    protected void btnSelect_Click(object sender, EventArgs e)
+    {
+        MoveItem(lstPositions, lstSelectedPositions);
+    }
+    protected void btnRemove_Click(object sender, EventArgs e)
+    {
+        MoveItem(lstSelectedPositions, lstPositions);
+    }
+
+    private void MoveItem(ListBox listFrom, ListBox listTo)
+    {
+        ListItemCollection lstItemFrom = listFrom.Items;
+        foreach (ListItem item in lstItemFrom)
+        {
+            if (item.Selected)
+            {
+                listTo.Items.Add(item);
+            }
+        }
+
+        ListItemCollection lstItemTo = listTo.Items;
+        foreach (ListItem item in lstItemTo)
+        {
+            listFrom.Items.Remove(item);
+        }
+    }
+}

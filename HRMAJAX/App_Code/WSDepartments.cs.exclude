@@ -1,0 +1,103 @@
+using System;
+using System.Web;
+using System.Collections;
+using System.Collections.Generic;
+using System.Web.Services;
+using System.Web.Services.Protocols;
+
+using HRMBLL.H0;
+
+
+
+/// <summary>
+/// Summary description for WebService
+/// </summary>
+[WebService(Namespace = "http://tempuri.org/")]
+[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+public class WSDepartments : System.Web.Services.WebService
+{
+
+    public WSDepartments()
+    {
+
+        //Uncomment the following line if using designed components 
+        //InitializeComponent(); 
+    }
+   
+
+    [WebMethod]
+    public List<Department> GetDepartments()
+    {
+        return GenerateDepartmentList(DepartmentsBLL.GetAllRoots());
+    }
+
+    [WebMethod]
+    public List<Department> GetAllDepartments()
+    {
+        return GenerateDepartmentList(DepartmentsBLL.GetAllDepartments());
+    }
+
+
+    [WebMethod]
+    public List<Department> GetRoot()
+    {
+        return GenerateDepartmentList(DepartmentsBLL.GetDepartmentRoot());
+    }
+
+    [WebMethod]
+    public List<Department> GetAll_SubLevel(int parentId)
+    {
+        return GenerateDepartmentList(DepartmentsBLL.GetAll_SubLevel(parentId));
+    }
+
+    [WebMethod]
+    public List<Department> GetByIds(string ids)
+    {
+        return GenerateDepartmentList(DepartmentsBLL.GetByIds(ids));
+    }
+
+    [WebMethod]
+    public string GetDepartmentNamesByIdsRootId(string ids, int rootId, string dash, string separator)
+    {
+        return DepartmentsBLL.GetDepartmentNamesByIdsRootId(ids, rootId, dash, separator);
+    }
+
+    private List<Department> GenerateDepartmentList(List<DepartmentsBLL> list)
+    {
+        List<Department> listReturn = new List<Department>();
+        foreach (DepartmentsBLL obj in list)
+        {
+            Department de = new Department();
+            de.departmentId = obj.DepartmentId;
+            de.departmentName = obj.DepartmentName;
+            de.ParentId = obj.ParentId;
+            de.departmentCode = obj.DepartmentCode;
+            de.departmentNameE = obj.DepartmentNameE;
+            de.description = obj.Description;
+
+            try
+            {
+                de.childNodeCount = obj.ChildNodeCount;
+            }
+            catch { de.childNodeCount = 0; }
+
+            listReturn.Add(de);
+        }
+
+        return listReturn;
+    }
+    
+
+}
+
+public class Department
+{
+    public int departmentId;
+    public string departmentCode;
+    public string departmentName;
+    public string departmentNameE;
+    public string description;
+    public int childNodeCount;
+    public int ParentId;
+}
+

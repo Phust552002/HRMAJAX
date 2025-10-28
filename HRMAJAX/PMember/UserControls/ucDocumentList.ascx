@@ -1,0 +1,125 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucDocumentList.ascx.cs" Inherits="PMember_UserControls_ucDocumentList" %>
+<%@ Register Src="~/UserControls/ucMessageError.ascx" TagName="ucMessageError" TagPrefix="uc1" %>
+<%@ Register Src="~/Administrator/UserControls/ucPermission.ascx" TagName="ucPermission" TagPrefix="uc2" %>
+<fieldset class="fieldset" style="padding:2px 2px 2px 2px">
+    <legend class="legend"> Thêm mới tài liệu</legend>
+    <table style="width: 100%" class="tableBorder" cellpadding="2" cellspacing="0">
+        <tr>
+            <td class="tdLabel" colspan="2">
+                <uc1:ucMessageError ID="UcMessageError1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <table style="width: 100%" class="tableBorder">
+                    <tr>
+                        <td class="tdLabel" style="text-align:left">
+                            <asp:Label ID="Label1" runat="server" CssClass="label" Text="Loại tài liệu"></asp:Label>
+                            <asp:DropDownList ID="ddlDocumentType" runat="server" CssClass="dropDownList"></asp:DropDownList>
+                            <asp:Label ID="Label2" runat="server" CssClass="label" Text="Tên tài liệu"></asp:Label>
+                            <asp:TextBox ID="txtDocName" runat="server" CssClass="textBox" ></asp:TextBox>
+                            <asp:Label ID="Label6" runat="server" CssClass="label" Text="Ghi chú"></asp:Label>
+                            <asp:TextBox ID="txtRemarks" runat="server" CssClass="textBox" ></asp:TextBox>
+                            <asp:Label ID="lbDocYear" runat="server" CssClass="label" Text="Năm"></asp:Label>
+                            <asp:DropDownList ID="ddlDocYear" runat="server" CssClass="dropDownList"></asp:DropDownList>
+                            <asp:Label ID="Label4" runat="server" CssClass="label" Text="Đường dẫn"></asp:Label>
+                            <asp:FileUpload ID="fuDocFile" runat="server" CssClass="textBox"/>
+                            <asp:Button ID="btnAdd" runat="server" Text="Thêm" OnClick="btnAdd_Click" CssClass="small color green button" Width="100px" />
+                            <uc2:ucPermission ID="UcPermission1" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<div>
+    <br />
+</div>
+<fieldset class="fieldset" style="padding:2px 2px 2px 2px">
+    <legend class="legend"> Các tài liệu</legend>
+    <table style="width: 100%" class="tableBorder" cellpadding="2" cellspacing="0">
+        <tr>
+            <td valign="top">
+                <table style="width: 100%" class="tableBorder">
+                    <tr>
+                        <td class="tdLabel" style="text-align:right">
+                            <asp:Label ID="Label3" runat="server" CssClass="label" Text="Loại tài liệu"></asp:Label>
+                            <asp:DropDownList ID="ddlDocumentTypeSearch" runat="server" CssClass="dropDownList"></asp:DropDownList>
+                            <asp:Label ID="Label5" runat="server" CssClass="label" Text="Tên tài liệu"></asp:Label>
+                            <asp:TextBox ID="txtDocNameSearch" runat="server" CssClass="textBox" ></asp:TextBox>
+                            <asp:Label ID="lbDocYearSearch" runat="server" CssClass="label" Text="Năm"></asp:Label>
+                            <asp:DropDownList ID="ddlDocYearSearch" runat="server" CssClass="dropDownList"></asp:DropDownList>
+                            <asp:Button ID="btnSearch" runat="server" Text="Tìm kiếm" OnClick="btnSearch_Click" CssClass="small color blue button" Width="100px" />
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+<%--</fieldset>
+<fieldset class="fieldset" style="padding:2px 2px 2px 2px">
+    <legend class="legend"> Tài liệu</legend>--%>
+    <table style="width: 100%" class="tableBorder" cellpadding="2" cellspacing="0">
+    
+    <tr>
+        <td valign="top">
+            <asp:GridView ID="grDocList" runat="server" AutoGenerateColumns="False" CssClass="grid-Border" Width="100%" OnRowDataBound="grdDocList_RowDataBound">
+                            <Columns>
+                                <asp:TemplateField HeaderText="STT" SortExpression="">
+                                    <ItemTemplate>
+                                        <asp:Label ID="lbSTT" runat="server" ></asp:Label>  
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Left" Width="5%"/>
+                                    <HeaderStyle HorizontalAlign="Left" />
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Tên tài liệu" SortExpression="DocName">
+                                    <ItemTemplate>
+                                        <asp:Label ID="lbDocName" runat="server" Text = '<%# Eval("DocName") %>'></asp:Label>  
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Left" Width="35%"/>
+                                    <HeaderStyle HorizontalAlign="Left" />
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Loại tài liệu" SortExpression="DocTypeName">
+                                    <ItemTemplate>
+                                        <asp:Label ID="lbDocTYpeName" runat="server" Text = '<%# Eval("DocTypeName") %>'></asp:Label>
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Left" Width="25%"/>
+                                    <HeaderStyle HorizontalAlign="Left" />
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Ghi chú" SortExpression="Remarks">
+                                    <ItemTemplate>
+                                        <asp:Label ID="lbRemarks" runat="server" Text = '<%# Eval("Remarks") %>'></asp:Label>
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Left" Width="25%"/>
+                                    <HeaderStyle HorizontalAlign="Left" />
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Tải về" SortExpression="">
+                                    <ItemTemplate>
+                                        <asp:ImageButton ImageUrl="~/Images/icon-save.gif" ID="lnkDownload" Text = "Tải về" CommandArgument = '<%# Eval("DocId") %>' runat="server" OnClick = "DownloadFile" Width="16px"></asp:ImageButton>
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Center" Width="5%"/>
+                                    <HeaderStyle HorizontalAlign="Center" />
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Xóa" SortExpression="">
+                                    <ItemTemplate>
+                                        <asp:ImageButton ImageUrl="~/Images/icon-delete.gif" ID="lnkDelete" Text = "Xóa" CommandArgument = '<%# Eval("DocId") %>' runat="server" OnClick = "DeleteFile" Width="16px"></asp:ImageButton>
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Center" Width="5%"/>
+                                    <HeaderStyle HorizontalAlign="Center" />
+                                </asp:TemplateField>
+                            </Columns>
+                                 <HeaderStyle CssClass="grid-header" /> 
+                                <RowStyle CssClass ="grid-item" />
+                                <AlternatingRowStyle CssClass="grid-atlternating-item" />    
+                                <PagerStyle CssClass="grid-paper" />  
+                            <EmptyDataTemplate>
+                                <asp:Label ID="Label8" runat="server" CssClass="value" Text="Chưa có tài liệu trong hồ sơ này."></asp:Label>
+                            </EmptyDataTemplate>
+                        </asp:GridView>
+        </td>
+    </tr>
+</table>
+</fieldset>

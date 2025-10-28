@@ -1,0 +1,293 @@
+﻿using HRMBLL.H6;
+using HRMUtil;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class PMember_UserControls_ucDocumentList : System.Web.UI.UserControl
+{
+    public int UserId
+    {
+        set
+        {
+            ViewState["UserId"] = value;
+        }
+        get
+        {
+            if (ViewState["UserId"] != null)
+            {
+                return int.Parse(ViewState["UserId"].ToString());
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
+    public int RecordType
+    {
+        set
+        {
+            ViewState["RecordType"] = value;
+        }
+        get
+        {
+            if (ViewState["RecordType"] != null)
+            {
+                return int.Parse(ViewState["RecordType"].ToString());
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
+    public string Path
+    {
+        get
+        {
+            return Server.MapPath(@"~\PMember\Docs\");
+        }
+    }
+    public void SetPersonalInfor()
+    {
+        //
+        
+    }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            if (RecordType != 4)
+            {
+                lbDocYear.Visible = false;
+                ddlDocYear.Visible = false;
+                lbDocYearSearch.Visible = false;
+                ddlDocYearSearch.Visible = false;
+            }
+            else
+            {
+                lbDocYear.Visible = true;
+                ddlDocYear.Visible = true;
+                lbDocYearSearch.Visible = true;
+                ddlDocYearSearch.Visible = true;
+            }
+            BindDocTypes(ddlDocumentType, false);
+            BindDocTypes(ddlDocumentTypeSearch, true);
+            BindDocYears(ddlDocYear, false);
+            BindDocYears(ddlDocYearSearch, true);
+            BindGridData(false);
+        }
+        
+    }
+
+    private void BindGridData(bool byFilter)
+    {
+        DataTable dtDocList;
+        if (!byFilter)
+            dtDocList = PMembersBLL.GetDocLists(UserId, RecordType, 0, "", 0);
+        else
+            dtDocList = PMembersBLL.GetDocLists(UserId, RecordType, Convert.ToInt32(ddlDocumentTypeSearch.SelectedValue), txtDocNameSearch.Text, Convert.ToInt32(ddlDocYearSearch.SelectedValue));
+        grDocList.DataSource = dtDocList;
+        grDocList.DataBind();
+    }
+
+    private void BindDocTypes(DropDownList ddl, bool forFilter)
+    {
+        DataTable dt = new DataTable();
+        DataTable dtDocTypes = PMembersBLL.GetDocTypes(RecordType);
+        dt = dtDocTypes.Clone();
+        if (forFilter)
+            dt.Rows.Add(0, "Tất cả", RecordType);
+        foreach (DataRow dr in dtDocTypes.Rows)
+        {
+            dt.ImportRow(dr);
+        }
+        ddl.DataSource = dt;
+        ddl.DataTextField = "DocTypeName";
+        ddl.DataValueField = "DocTypeId";
+        ddl.DataBind();
+    }
+    private void BindDocYears(DropDownList ddl, bool forFilter)
+    {
+        DataTable dtDocYears = new DataTable();
+        dtDocYears.Columns.Add("YearText", typeof(string));
+        dtDocYears.Columns.Add("Year", typeof(int));
+        if (forFilter)
+            dtDocYears.Rows.Add("Tất cả", 0);
+
+        for (int i = 2015; i <= DateTime.Now.Year + 1; i++)
+            dtDocYears.Rows.Add(i.ToString(), i);
+
+        ddl.DataSource = dtDocYears;
+        ddl.DataTextField = "YearText";
+        ddl.DataValueField = "Year";
+        ddl.DataBind();
+        if (forFilter)
+            ddl.SelectedIndex = 0;
+        else
+            ddl.SelectedValue = DateTime.Now.Year.ToString();
+    }
+    protected void grdDocList_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        GridViewRow item = e.Row;
+        if (item.RowType == DataControlRowType.DataRow)
+        {
+            DataRowView dr = (DataRowView)item.DataItem;
+
+            Label lbSTT = (Label)item.FindControl("lbSTT");
+            lbSTT.Text = (item.RowIndex + 1).ToString();
+        }
+    }
+    protected void btnAdd_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            NapChuoiMau();
+            string fileName = string.Empty;
+            string filePath = string.Empty;
+            int year = 0;
+            if (RecordType == 4)
+                year = Convert.ToInt32(ddlDocYear.SelectedValue);
+            if (fuDocFile.HasFile)
+            {
+                fileName = clsEncDec.Encrypt(fuDocFile.FileName);
+            }
+            long docId = PMembersBLL.AddDoc(UserId, Convert.ToInt32(ddlDocumentType.SelectedValue), txtDocName.Text, Bodau(txtDocName.Text), fileName, year, txtRemarks.Text);
+
+            if (fuDocFile.HasFile)
+            {
+                if (!Directory.Exists(Path + "\\" + clsEncDec.GetMD5(UserId.ToString()) + "\\" + RecordType.ToString() + "\\"))
+                    Directory.CreateDirectory(Path + "\\" + clsEncDec.GetMD5(UserId.ToString()) + "\\" + RecordType.ToString() + "\\");
+                filePath = Path + "\\" + clsEncDec.GetMD5(UserId.ToString()) + "\\" + RecordType.ToString() + "\\" + docId + "_" + fuDocFile.FileName;
+                fuDocFile.SaveAs(filePath);
+            }
+            ddlDocumentType.SelectedIndex = 0;
+            txtDocName.Text = string.Empty;
+            txtRemarks.Text = string.Empty;
+            BindGridData(false);
+        }
+        catch (Exception ex)
+        {
+            UcMessageError1.ErrorText = ex.Message;
+        }
+    }
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            BindGridData(true);
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+    protected void DownloadFile(object sender, EventArgs e)
+    {
+        int docId = Convert.ToInt32((sender as ImageButton).CommandArgument);
+        DataTable dtDocs = PMembersBLL.GetDoc(docId);
+        if (dtDocs != null && dtDocs.Rows.Count > 0)
+        {
+            string filePath = Path + "\\" + clsEncDec.GetMD5(UserId.ToString()) + "\\" + RecordType.ToString() + "\\" + docId + "_" + clsEncDec.Decrypt(dtDocs.Rows[0]["FileName"].ToString());
+            Response.ContentType = Page.ContentType;
+            Response.AppendHeader("Content-Disposition", "attachment; filename=" + System.IO.Path.GetFileName(filePath));
+            Response.WriteFile(filePath);
+            Response.End();
+        }
+
+
+    }
+
+    protected void DeleteFile(object sender, EventArgs e)
+    {
+        int docId = Convert.ToInt32((sender as ImageButton).CommandArgument);
+        DataTable dtDocs = PMembersBLL.GetDoc(docId);
+        if (dtDocs != null && dtDocs.Rows.Count > 0)
+        {
+            PMembersBLL.DeleteDoc(docId);
+
+            string filePath = Path + "\\" + clsEncDec.GetMD5(UserId.ToString()) + "\\" + RecordType.ToString() + "\\" + docId + "_" + clsEncDec.Decrypt(dtDocs.Rows[0]["FileName"].ToString());
+
+            File.Delete(filePath);
+            BindGridData(false);
+        }
+
+    }
+    string[,] Mảng = new string[14, 18];//Tạo mảng có 14 hàng và 17 cột, mỗi hàng chứa các ký tự cùng nhóm
+    private string Bodau(string fullName)
+    {
+        string Tạm1, Tạm2;
+        byte i, j;
+        // Gán cho biến Tạm1 nội dung trong TxtViết 
+        Tạm1 = fullName;
+        //Tiến hành thay thế , lọc bỏ dấu cho chuỗi
+        for (j = 0; j < 13; j++)
+        {
+            for (i = 1; i < 17; i++)
+            {
+                Tạm2 = Tạm1.Replace(Mảng[j, i], Mảng[j, 0]);
+                Tạm1 = Tạm2;
+            }
+        }
+        return Tạm1;
+    }
+
+    private void NapChuoiMau()
+    {
+        byte i, j;
+        string Chuỗi = "";
+        string Thga, Thge, Thgo, Thgu, Thgi, Thgd, Thgy;
+        string HoaA, HoaE, HoaO, HoaU, HoaI, HoaD, HoaY;
+        Chuỗi = "aAeEoOuUiIdDyY";
+        Thga = "áàạảãâấầậẩẫăắằặẳẵ";
+        HoaA = "ÁÀẠẢÃÂẤẦẬẨẪĂẮẰẶẲẴ";
+        Thge = "éèẹẻẽêếềệểễeeeeee";
+        HoaE = "ÉÈẸẺẼÊẾỀỆỂỄEEEEEE";
+        Thgo = "óòọỏõôốồộổỗơớờợởỡ";
+        HoaO = "ÓÒỌỎÕÔỐỒỘỔỖƠỚỜỢỞỠ";
+        Thgu = "úùụủũưứừựửữuuuuuu";
+        HoaU = "ÚÙỤỦŨƯỨỪỰỬỮUUUUUU";
+        Thgi = "íìịỉĩiiiiiiiiiiii";
+        HoaI = "ÍÌỊỈĨIIIIIIIIIIII";
+        Thgd = "đdddddddddddddddd";
+        HoaD = "ĐDDDDDDDDDDDDDDDD";
+        Thgy = "ýỳỵỷỹyyyyyyyyyyyy";
+        HoaY = "ÝỲỴỶỸYYYYYYYYYYYY";
+        //Nạp vào trong Mảng các ký tự
+        //Nạp vào từng đầu hàng các ký tự không dấu
+        //Nạp vào cột đầu tiên
+        for (i = 0; i <= 13; i++)
+        {
+            //Mảng(i, 0) = string.Su(Chuỗi, i + 1, 1);
+            Mảng[i, 0] = Chuỗi.Substring(i, 1);
+
+        }
+        //Nạp vào từng ô các ký tự có dấu
+        for (j = 1; j < 17; j++)
+        {
+            for (i = 0; i < 17; i++)
+            {
+                Mảng[0, i + 1] = Thga.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thga vào từng ô trong hàng 0
+                Mảng[1, i + 1] = HoaA.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaA vào từng ô trong  hàng 1
+                Mảng[2, i + 1] = Thge.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thge vào từng ô trong  hàng 2
+                Mảng[3, i + 1] = HoaE.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaE vào từng ô trong  hàng 3
+                Mảng[4, i + 1] = Thgo.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgo vào từng ô trong  hàng 4
+                Mảng[5, i + 1] = HoaO.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaO vào từng ô trong  hàng 5
+                Mảng[6, i + 1] = Thgu.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgu vào từng ô trong  hàng 6
+                Mảng[7, i + 1] = HoaU.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaU vào từng ô trong  hàng 7
+                Mảng[8, i + 1] = Thgi.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgi vào từng ô trong  hàng 8
+                Mảng[9, i + 1] = HoaI.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaI vào từng ô trong  hàng 9
+                Mảng[10, i + 1] = Thgd.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgd vào từng ô trong  hàng 10
+                Mảng[11, i + 1] = HoaD.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaD vào từng ô trong  hàng 11
+                Mảng[12, i + 1] = Thgy.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgy vào từng ô trong  hàng 12
+                Mảng[13, i + 1] = HoaY.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaY vào từng ô trong  hàng 13
+            }
+        }
+    }
+}

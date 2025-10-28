@@ -1,0 +1,219 @@
+using System;
+using System.Web;
+using System.Collections;
+using System.Collections.Generic;
+using System.Web.Services;
+using System.Web.Services.Protocols;
+using HRMBLL.H0;
+using HRMBLL.H;
+using HRMUtil;
+
+
+/// <summary>
+/// Summary description for WebService
+/// </summary>
+[WebService(Namespace = "http://tempuri.org/")]
+[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+public class WSEmployees : System.Web.Services.WebService
+{
+    
+
+    public WSEmployees()
+    {
+
+        //Uncomment the following line if using designed components 
+        //InitializeComponent(); 
+    }
+
+    [WebMethod]
+    public Employee LoginHRM(string userName, string password)
+    {
+        EmployeesBLL obj = EmployeesBLL.Login(userName, password);
+        if (obj != null)
+        {
+            return GeObjectEmployee(obj);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    [WebMethod]
+    public List<Employee> GetByDepartmentId(int departmentId)
+    {
+        List<EmployeesBLL> list = EmployeesBLL.GetByDeptId(departmentId);
+
+        return GenerateEmployeeList(list);
+             
+    }
+
+    [WebMethod]
+    public List<Employee> GetByFilter(int departmentId, string fullName)
+    {
+        List<EmployeesBLL> list = EmployeesBLL.GetEmployeesByFilter(departmentId, fullName);
+
+        return GenerateEmployeeList(list);
+
+    }
+
+    [WebMethod]
+    public List<Employee> GetByUserIds(string userIds)
+    {
+        List<EmployeesBLL> list = EmployeesBLL.GetByIds(userIds);
+        return GenerateEmployeeList(list);
+    }
+
+    [WebMethod]
+    public List<Employee> GetAll()
+    {
+        List<EmployeesBLL> list = EmployeesBLL.GetAll();
+
+        return GenerateEmployeeList(list);
+
+    }
+    /// <summary>
+    /// get status >0
+    /// </summary>
+    /// <returns></returns>
+    [WebMethod]
+    public List<Employee> GetAll2()
+    {
+        List<EmployeesBLL> list = EmployeesBLL.GetAll2();
+
+        return GenerateEmployeeList(list);
+
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="username"></param>
+    /// <param name="oldPassword"></param>
+    /// <param name="newPassword"></param>
+    /// <returns></returns>
+    [WebMethod]
+    public int ChangePassword(string username, string oldPassword, string newPassword)
+    {
+        try
+        {
+            EmployeesBLL.ChangePassword(username, oldPassword, newPassword);
+            return 1;
+        }
+        catch (HRMException ex)
+        {
+            if (ex.ErrorCode == 1300400)
+            {
+                return 0;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+       
+    }
+
+    /// <summary>
+    /// Dung them vao ngay 26MAR10, lay danh sach nhan vien co ngay sinh nhat la ngay hom nay
+    /// </summary>
+    /// <returns></returns>
+    [WebMethod]
+    public List<Employee> GetTodayBirthdayEmployees()
+    {
+        try
+        {
+            List<EmployeesBLL> list = EmployeesBLL.GetTodayBirthdayEmployees();
+
+            return GenerateEmployeeList(list);
+        }
+        catch (HRMException ex)
+        {
+            return null;
+        }
+
+    }
+
+    /// <summary>
+    /// Dung them vao ngay 1 APR 10
+    /// </summary>
+    /// <returns></returns>
+    public string GetTodayBulletin()
+    {
+        List<BulletinBLL> list = BulletinBLL.GetByNumberday(7);
+        if (list.Count > 0)
+        {
+            return list[0].BulletinDetail;
+        }
+        return "";
+    }
+    private List<Employee> GenerateEmployeeList(List<EmployeesBLL> list)
+    {
+        List<Employee> listReturn = new List<Employee>();
+        foreach (EmployeesBLL obj in list)
+        {            
+            listReturn.Add(GeObjectEmployee(obj));
+        }
+
+        return listReturn;
+    }
+
+    private Employee GeObjectEmployee(EmployeesBLL obj)
+    {
+        Employee em = new Employee();
+        em.UserId = obj.UserId;
+        em.FullName = obj.FullName;
+        em.UserCode = obj.EmployeeCode;
+        em.UserName = obj.UserName;
+        em.WorkingPhone = obj.WorkingPhone;
+        em.HandPhone = obj.HandPhone;
+        em.HomePhone = obj.HomePhone;
+        em.Password = obj.Password;
+
+        try { em.BirthDay = obj.Birthday.ToString("dd/MM/yyyy"); }
+        catch { em.BirthDay = string.Empty; }
+        try { em.DepartmentName = obj.DepartmentName; }
+        catch { em.DepartmentName = string.Empty; }
+        try { em.DepartmentFullName = obj.DepartmentFullName; }
+        catch { em.DepartmentFullName = string.Empty; }
+        try { em.DepartmentCode = obj.DepartmentCode; }
+        catch { em.DepartmentName = string.Empty; }
+        try { em.DepartmentId = obj.DepartmentId; }
+        catch { em.DepartmentId = 0; }
+        try { em.PosionName = obj.PositionName; }
+        catch { em.PosionName = string.Empty; }
+
+        try { em.RootId = obj.RootId; }
+        catch { em.RootId = 0; }
+        try { em.RootName = obj.RootName; }
+        catch { em.RootName = string.Empty; }
+        try { em.Status = obj.Status; }
+        catch { em.Status = 0; }
+
+        return em;
+    }
+
+}
+
+
+public class Employee
+{
+    public int UserId;
+    public string UserCode;
+    public string UserName;
+    public string FullName;
+    public string BirthDay;
+    public string PosionName;
+    public string DepartmentName;
+    public string DepartmentFullName;
+    public string DepartmentCode;
+    public int DepartmentId;
+    public string WorkingPhone;
+    public string HandPhone;
+    public string HomePhone;
+    public string Password;
+    public int RootId;
+    public string RootName;
+    public int Status;
+}
+

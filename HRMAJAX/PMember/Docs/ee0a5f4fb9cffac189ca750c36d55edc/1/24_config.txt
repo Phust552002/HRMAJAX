@@ -1,0 +1,65 @@
+NT Service\MSSQLSERVER
+sa/Tuanda@123#
+https://10.10.11.2/qrcode/
+10.10.0.166/Quoc17021981#
+
+DAD: 172.16.235.5/sags/SagsDAD35474999# 	DCS20DAGS
+CXR: 172.16.112.5/sa/sags8485383cxr 		DCS20
+SGN: 10.10.55.5/sags/sags3007			DCS20
+
+
+
+Sel_H7_Employee_By_CardId
+Sel_H0_SecurityControl_By_Id
+Sel_H7_Setting_By_Name
+
+Sel_H7_LastRecord_By_UserId
+[Ins_H0_EmployeeTimeBillByUserIdAndTime]
+
+
+Sel_H7_LastEmployeeTimeBillRecords10
+Sel_H0_LeaveTypes_All
+Login
+Sel_H7_EmployeeLeave_Detail_By_UserId_Status
+Ins_H0_EmployeeLeaveV1_Online
+
+
+[Sel_H6_EmployeeLeave_Detail_By_UserId_Status]  				xxx
+Ins_H0_EmployeeLeaveV1_Online
+Upd_H0_EmployeeLeave_Status_Online
+[Sel_H6_EmployeeLeave_Detail_By_DepartmentId_Status]   				xxx
+[Sel_H6_EmployeeLeave_Detail_By_ParentId_Status]
+[Sel_H6_EmployeeLeave_Detail_By_ParentId_LevelPosition_Status]			xxx
+[Sel_H6_EmployeeLeave_Detail_By_RootId_LevelPosition_Status]			xxx
+
+[dbo].[H6_EmployeeLeaveEnableFunction]
+
+http://10.10.0.77/IDWS/IDWebServices.asmx
+http://10.10.0.77/ID/Default?request=w3Ny73tmm5fCMfq6N5MiiA==
+
+
+http://localhost:14377/Default?request=w3Ny73tmm5fCMfq6N5MiiA==
+http://localhost:14377/Default?request=RhClynydZrAivmFDMRvxIg==
+http://localhost:14377/Default?request=D4p21DEotsM16cmH5uR7KQ==
+http://localhost:14377/Default?request=DqXYXNFXqvnRCEMzCB37tA==
+2032
+http://localhost:14377/Default?request=v7wFTCGXMYGC+GHDTl1Mfg==
+2031
+
+
+http://localhost:4567/staffinfoscanner?request=v7wFTCGXMYGC+GHDTl1Mfg==
+
+
+http://10.10.0.77/ELVE/staffinfoscanner?request=RhClynydZrAivmFDMRvxIg==
+http://10.10.0.77/ELVE/staffinfoscanner?request=D4p21DEotsM16cmH5uR7KQ==
+http://10.10.0.77/ELVE/staffinfoscanner?request=RhClynydZrAivmFDMRvxIg==
+http://10.10.0.77/ELVE/staffinfoscanner?request=DqXYXNFXqvnRCEMzCB37tA==
+
+681702
+
+0 chua duyet
+1 ca duyet
+2 doi duyet
+3 phong duyet
+4 tchc duyet
+

@@ -1,0 +1,40 @@
+using System;
+using System.Web;
+using System.Collections;
+using System.Collections.Generic;
+using System.Web.Services;
+using System.Web.Services.Protocols;
+using HRMBLL.H;
+
+/// <summary>
+/// Summary description for WSHRM
+/// </summary>
+[WebService(Namespace = "http://tempuri.org/")]
+[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+public class WSHRM : System.Web.Services.WebService
+{
+
+    public WSHRM()
+    {
+
+        //Uncomment the following line if using designed components 
+        //InitializeComponent(); 
+    }
+
+    [WebMethod]
+    /// <summary>
+    /// Dung them vao ngay 1 APR 10
+    /// </summary>
+    /// <returns></returns>
+    public string GetTodayBulletin()
+    {
+        List<BulletinBLL> list = BulletinBLL.GetByNumberday(7);
+        if (list.Count > 0)
+        {
+            return list[0].BulletinDetail;
+        }
+        return "";
+    }
+
+}
+

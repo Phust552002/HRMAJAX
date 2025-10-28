@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HRM>
+  <Insert>
+    <Message code="1300100">Không thể nhập {0}. Vui lòng nhập giá trị khác</Message>
+  </Insert>
+  <Update>
+    <Message code="1300200">Không thể thay đổi {0} này. Vui lòng thay đổi {0} khác</Message>
+  </Update>
+  <Delete>
+    <Message code="1300300">{0}.Không thể xóa.</Message>
+  </Delete>
+  
+</HRM>

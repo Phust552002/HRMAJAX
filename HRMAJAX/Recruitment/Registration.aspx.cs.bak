@@ -1,0 +1,273 @@
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+using HRMBLL.H2;
+using HRMBLL.H0;
+using HRMUtil;
+using HRMUtil.KeyNames.H2;
+
+public partial class Recruitment_Registration : System.Web.UI.Page
+{
+
+    string[,] Mảng = new string[14, 18];//Tạo mảng có 14 hàng và 17 cột, mỗi hàng chứa các ký tự cùng nhóm
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+
+            UcTitle1.Text = "ĐĂNG KÝ THÔNG TIN ĐĂNG NHẬP ĐỂ NỘP ĐƠN DỰ TUYỂN ĐÀO TẠO";
+            DataRow dr = SessionsBLL.GetSessionIsOpenForDataRow();
+            if (dr != null)
+            {
+                pnRegistration.Visible= true;
+                lbError.Visible = false;
+                SessionId = int.Parse(dr["SessionId"].ToString());
+                //SessionsBLL s = lst[0];
+                //lbSession.Text = s.Name.ToUpper() + " - " + s.PositionName.ToUpper();
+                
+                //PositionId = s.PositionId;
+                BindDataToDDLPosition();
+            }
+            else
+            {
+                pnRegistration.Visible = false;
+                lbError.Visible = true;
+                
+                lbError.Text = "ĐỢT TUYỂN DỤNG CHƯA ĐƯỢC MỞ NÊN BẠN KHÔNG THỂ ĐĂNG KÝ";
+            }
+        }
+    }
+
+    public int SessionId
+    {
+        get
+        {
+            if (ViewState["SessionId"] != null)
+            {
+                return int.Parse(ViewState["SessionId"].ToString());
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        set
+        {
+            ViewState["SessionId"] = value;
+        }
+    }
+    //public int PositionId
+    //{
+    //    get
+    //    {
+    //        if (ViewState["PositionId"] != null)
+    //        {
+    //            return int.Parse(ViewState["PositionId"].ToString());
+    //        }
+    //        else
+    //        {
+    //            return 0;
+    //        }
+    //    }
+    //    set
+    //    {
+    //        ViewState["PositionId"] = value;
+    //    }
+    //}
+
+    private void BindDataToDDLPosition()
+    {
+        ddlPositions.Items.Clear();
+        ddlPositions.Items.Add(new ListItem("", "0"));
+        ddlPositions.DataSource = SessionsBLL.GetPositionBySessionIdForDataTable(SessionId);
+        ddlPositions.DataTextField = "Description";
+        ddlPositions.DataValueField = "PositionId";
+        ddlPositions.DataBind();
+    }
+
+    protected void lnkRegistration_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Recruitment/SignIn.aspx");
+    }
+  
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            if (CheckValid())
+            {
+                NapChuoiMau();
+
+                string lastName1 = Bodau(txtLastName.Text);
+                string firstName1 = Bodau(txtFirstName.Text);
+
+                long candidateId = CandidatesBLL.InsertForRegistration(int.Parse(ddlPositions.SelectedValue), SessionId, txtLastName.Text, txtFirstName.Text, int.Parse(txtDay.Text), int.Parse(txtMonth.Text), int.Parse(txtYear.Text), lastName1, firstName1, txtUserName.Text, txtPassword.Text, Constants.Candidate_Status_Unapproved_Id);
+                Session.Add(Constants.KEY_CANDIDATE_CURRENT, candidateId);
+                Response.Redirect("~/Recruitment/RegistrationDetail.aspx");
+            }
+        }
+        catch (HRMException he)
+        {
+            UcTitle1.ErrorText = he.Message;
+        }
+    }
+
+    private bool CheckValid()
+    {
+        if (int.Parse(ddlPositions.SelectedValue.Trim()) <= 0)
+        {
+            UcTitle1.ErrorText = "VUI LÒNG CHỌN CHỨC DANH ỨNG TUYỂN";
+            lbPositionsError.Text = "***";
+            return false;
+        }
+        else if (txtLastName.Text.Trim().Length <= 0)
+        {
+            UcTitle1.ErrorText = "BẠN PHẢI NHẬP HỌ TÊN LÓT";
+            lbLastNameError.Text = "***";
+            return false;
+        }
+        else if (txtFirstName.Text.Trim().Length <= 0)
+        {
+            UcTitle1.ErrorText = "BẠN PHẢI NHẬP TÊN";
+            lbFirstNameError.Text = "***";
+            return false;
+        }
+        else if (txtUserName.Text.Trim().Length <= 0)
+        {
+            UcTitle1.ErrorText = "BẠN PHẢI NHẬP TÊN NGƯỜI DÙNG (UserName)";
+            lbUserNameError.Text = "***";
+            return false;
+        }
+        else if (txtPassword.Text.Trim().Length <= 0)
+        {
+            UcTitle1.ErrorText = "BẠN PHẢI NHẬP MẬT KHẨU (password)";
+            lbPasswordError.Text = "***";
+            return false;
+        }
+        else if (txtDay.Text.Trim().Length <= 0 || txtMonth.Text.Trim().Length <= 0 || txtYear.Text.Trim().Length <= 0)
+        {
+            UcTitle1.ErrorText = "BẠN PHẢI NHẬP NGÀY THÁNG NĂM SINH";
+            lbBirthdayError.Text = "***";
+            return false;
+        }
+        else
+        {
+            try { int.Parse(txtDay.Text); }
+            catch
+            {
+                UcTitle1.ErrorText = "BẠN PHẢI NHẬP NGÀY THÁNG NĂM SINH LÀ KÝ TỰ SỐ";
+                lbBirthdayError.Text = "***";
+                return false;
+            }
+            try { int.Parse(txtMonth.Text); }
+            catch
+            {
+                UcTitle1.ErrorText = "BẠN PHẢI NHẬP NGÀY THÁNG NĂM SINH LÀ KÝ TỰ SỐ";
+                lbBirthdayError.Text = "***";
+                return false;
+            }
+            try { int.Parse(txtYear.Text); }
+            catch
+            {
+                UcTitle1.ErrorText = "BẠN PHẢI NHẬP NGÀY THÁNG NĂM SINH LÀ KÝ TỰ SỐ";
+                lbBirthdayError.Text = "***";
+                return false;
+            }
+
+            DataTable dt = CandidatesBLL.GetByUserName(txtUserName.Text.Trim());
+            if (dt.Rows.Count>0)
+            {
+
+                UcTitle1.ErrorText = "TÊN NGƯỜI DÙNG (UserName) BỊ TRÙNG";
+                lbUserNameError.Text = "***";
+                return false;
+            }
+
+            return true;
+            //return CaptchaControl1.UserValidated;
+            
+        }
+        
+    }
+    private string Bodau(string fullName)
+    {
+        string Tạm1, Tạm2;
+        byte i, j, n;
+        // Gán cho biến Tạm1 nội dung trong TxtViết 
+        Tạm1 = fullName;
+        //Tiến hành thay thế , lọc bỏ dấu cho chuỗi
+        for (j = 0; j < 13; j++)
+        {
+            for (i = 1; i < 17; i++)
+            {
+                Tạm2 = Tạm1.Replace(Mảng[j, i], Mảng[j, 0]);
+                Tạm1 = Tạm2;
+            }
+        }
+        return Tạm1;
+    }
+
+    private void NapChuoiMau()
+    {
+        byte i, j, n;
+        string Chuỗi = "";
+        string Thga, Thge, Thgo, Thgu, Thgi, Thgd, Thgy;
+        string HoaA, HoaE, HoaO, HoaU, HoaI, HoaD, HoaY;
+        Chuỗi = "aAeEoOuUiIdDyY";
+        Thga = "áàạảãâấầậẩẫăắằặẳẵ";
+        HoaA = "ÁÀẠẢÃÂẤẦẬẨẪĂẮẰẶẲẴ";
+        Thge = "éèẹẻẽêếềệểễeeeeee";
+        HoaE = "ÉÈẸẺẼÊẾỀỆỂỄEEEEEE";
+        Thgo = "óòọỏõôốồộổỗơớờợởỡ";
+        HoaO = "ÓÒỌỎÕÔỐỒỘỔỖƠỚỜỢỞỠ";
+        Thgu = "úùụủũưứừựửữuuuuuu";
+        HoaU = "ÚÙỤỦŨƯỨỪỰỬỮUUUUUU";
+        Thgi = "íìịỉĩiiiiiiiiiiii";
+        HoaI = "ÍÌỊỈĨIIIIIIIIIIII";
+        Thgd = "đdddddddddddddddd";
+        HoaD = "ĐDDDDDDDDDDDDDDDD";
+        Thgy = "ýỳỵỷỹyyyyyyyyyyyy";
+        HoaY = "ÝỲỴỶỸYYYYYYYYYYYY";
+        //Nạp vào trong Mảng các ký tự
+        //Nạp vào từng đầu hàng các ký tự không dấu
+        //Nạp vào cột đầu tiên
+        for (i = 0; i <= 13; i++)
+        {
+            //Mảng(i, 0) = string.Su(Chuỗi, i + 1, 1);
+            Mảng[i, 0] = Chuỗi.Substring(i, 1);
+
+        }
+        //Nạp vào từng ô các ký tự có dấu
+        for (j = 1; j < 17; j++)
+        {
+            for (i = 0; i < 17; i++)
+            {
+                Mảng[0, i + 1] = Thga.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thga vào từng ô trong hàng 0
+                Mảng[1, i + 1] = HoaA.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaA vào từng ô trong  hàng 1
+                Mảng[2, i + 1] = Thge.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thge vào từng ô trong  hàng 2
+                Mảng[3, i + 1] = HoaE.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaE vào từng ô trong  hàng 3
+                Mảng[4, i + 1] = Thgo.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgo vào từng ô trong  hàng 4
+                Mảng[5, i + 1] = HoaO.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaO vào từng ô trong  hàng 5
+                Mảng[6, i + 1] = Thgu.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgu vào từng ô trong  hàng 6
+                Mảng[7, i + 1] = HoaU.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaU vào từng ô trong  hàng 7
+                Mảng[8, i + 1] = Thgi.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgi vào từng ô trong  hàng 8
+                Mảng[9, i + 1] = HoaI.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaI vào từng ô trong  hàng 9
+                Mảng[10, i + 1] = Thgd.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgd vào từng ô trong  hàng 10
+                Mảng[11, i + 1] = HoaD.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaD vào từng ô trong  hàng 11
+                Mảng[12, i + 1] = Thgy.Substring(i, 1); //Nạp từng ký tự trong chuỗi Thgy vào từng ô trong  hàng 12
+                Mảng[13, i + 1] = HoaY.Substring(i, 1); //Nạp từng ký tự trong chuỗi HoaY vào từng ô trong  hàng 13
+            }
+        }
+    }
+
+    protected void btnBack_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("http://web.sags.vn/hrm/Recruitment/Location.aspx");
+    }
+   
+}
