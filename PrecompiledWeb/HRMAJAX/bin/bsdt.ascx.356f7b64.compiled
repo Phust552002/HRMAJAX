@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Bonus/UserControls/BSDT.ascx" hash="2494adcdd" filehash="74076b6fca153b6c" flags="110000" assembly="App_Web_rfolhcfi" type="ASP.bonus_usercontrols_bsdt_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Bonus/UserControls/BSDT.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/BSDT.ascx.cs" />
+    </filedeps>
+</preserve>

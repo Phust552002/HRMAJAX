@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Bonus/UserControls/SafeAviation.ascx" hash="2494adcdd" filehash="840e2255332cf5db" flags="110000" assembly="App_Web_rfolhcfi" type="ASP.bonus_usercontrols_safeaviation_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Bonus/UserControls/SafeAviation.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/SafeAviation.ascx.cs" />
+    </filedeps>
+</preserve>

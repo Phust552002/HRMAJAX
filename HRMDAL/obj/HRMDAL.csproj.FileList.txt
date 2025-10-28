@@ -1,0 +1,8 @@
+bin\Debug\HRMDAL.dll.config
+bin\Debug\HRMDAL.dll
+bin\Debug\HRMDAL.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\HRMDAL.dll
+obj\Debug\HRMDAL.pdb
+bin\Debug\HRMUtil.dll
+bin\Debug\HRMUtil.pdb

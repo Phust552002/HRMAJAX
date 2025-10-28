@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/MessageError.ascx" hash="2494adcdd" filehash="ae0185c53c871e3d" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_messageerror_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+    </filedeps>
+</preserve>

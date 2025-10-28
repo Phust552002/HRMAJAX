@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/ShareHolder/ChairmanVoteCountReport.aspx" hash="2494adcdd" filehash="bd7912eb54501508" flags="110000" assembly="App_Web_4bdybt4c" type="ASP.shareholder_chairmanvotecountreport_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/ShareHolder/ChairmanVoteCountReport.aspx" />
+        <filedep name="/HRMAJAX/ShareHolder/ChairmanVoteCountReport.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

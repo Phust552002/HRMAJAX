@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" hash="2494adcdd" filehash="d0049d02617d812" flags="110000" assembly="App_Web_rdehpjwr" type="ASP.administrator_usercontrols_ucpermission_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+    </filedeps>
+</preserve>

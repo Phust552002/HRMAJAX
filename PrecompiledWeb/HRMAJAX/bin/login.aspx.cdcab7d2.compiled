@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Login.aspx" hash="2494adcdd" filehash="c0c703196a8a643" flags="110000" assembly="App_Web_qkxqjjws" type="ASP.login_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Login.aspx" />
+        <filedep name="/HRMAJAX/Login.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

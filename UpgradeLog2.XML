@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HRMFingerPrint">
+</Property><Property Name="Solution File" Value="D:\Projects\HRM\WEB\HRMFingerPrint.sln">
+</Property><Property Name="Date" Value="Thursday, September 8, 2016">
+</Property><Property Name="Time" Value="14:22 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="HRMBLL" Source="HRMBLL\HRMBLL.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="HRMBLL" Source="HRMBLL\HRMBLL.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="HRMDAL" Source="HRMDAL\HRMDAL.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="HRMDAL" Source="HRMDAL\HRMDAL.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="HRMUtil" Source="HRMUtil\HRMUtil.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="HRMUtil" Source="HRMUtil\HRMUtil.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="2" Project="HRMWin" Source="HRMWin\HRMWin.csproj" Description="Unable to open project file to perform upgrade.  ">
+</Event><Event ErrorLevel="2" Project="HRMTimeWorksBill" Source="HRMTimeWorksBill\HRMTimeWorksBill.csproj" Description="Unable to open project file to perform upgrade.  ">
+</Event><Event ErrorLevel="0" Project="" Source="HRMFingerPrint.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="HRMFingerPrint.sln" Description="Converted">
+</Event></UpgradeLog>

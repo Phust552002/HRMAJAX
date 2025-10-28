@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Contracts/UserControls/ContractFilter.ascx" hash="2494adcdd" filehash="4cd541ca975fd6d6" flags="110000" assembly="App_Web_2zw3nmuk" type="ASP.contracts_usercontrols_contractfilter_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Contracts/UserControls/ContractFilter.ascx" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/ContractFilter.ascx.cs" />
+    </filedeps>
+</preserve>

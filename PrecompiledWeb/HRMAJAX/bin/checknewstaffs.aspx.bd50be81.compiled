@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Employee/CheckNewStaffs.aspx" hash="2494adcdd" filehash="7c3718df616e6896" flags="110000" assembly="App_Web_tj3212a3" type="ASP.employee_checknewstaffs_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/CheckNewStaffs.aspx" />
+        <filedep name="/HRMAJAX/Employee/CheckNewStaffs.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+    </filedeps>
+</preserve>

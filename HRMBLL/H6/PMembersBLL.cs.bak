@@ -1,0 +1,321 @@
+﻿using HRMDAL.H6;
+using HRMUtil;
+using HRMUtil.KeyNames.H0;
+using HRMUtil.KeyNames.H6;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Text;
+
+namespace HRMBLL.H6
+{
+    public class PMembersBLL : HRMBLL.H0.EmployeesBLL
+    {
+        private DateTime _DateJoinP = FormatDate.GetSQLDateMinValue;
+        private DateTime _DateJoinPOfficial = FormatDate.GetSQLDateMinValue;
+        private string _PlaceJoinP = string.Empty;
+        private string _PCardNo = string.Empty;
+        private string _PMemberRemarks = string.Empty;
+        private int _PMemberStatus = 0;
+
+        public PMembersBLL(int userId, string userName, string employeeCode, string password, string fullName, DateTime birthday) : base(userId, userName, employeeCode, password, fullName, birthday)
+        {
+
+        }
+
+        #region properties
+        public DateTime DateJoinP
+        {
+            get { return _DateJoinP; }
+            set { _DateJoinP = value; }
+        }
+        public DateTime DateJoinPOfficial
+        {
+            get { return _DateJoinPOfficial; }
+            set { _DateJoinPOfficial = value; }
+        }
+        public string PlaceJoinP
+        {
+            get { return _PlaceJoinP; }
+            set { _PlaceJoinP = value; }
+        }
+
+        
+
+        public string PCardNo
+        {
+            get { return _PCardNo; }
+            set { _PCardNo = value; }
+        }
+        public string PMemberRemarks
+        {
+            get { return _PMemberRemarks; }
+            set { _PMemberRemarks = value; }
+        }
+        public int PMemberStatus
+        {
+            get { return _PMemberStatus; }
+            set { _PMemberStatus = value; }
+        }
+
+        
+        #endregion
+
+
+        #region public methods Get
+        public static PMembersBLL GetPMemberByEmployeeId(int userId)
+        {
+            PMembersDAL objPMembersDAL = new PMembersDAL();
+            DataTable dt = objPMembersDAL.GetOne(userId);
+            if (dt.Rows.Count > 0)
+            {
+                return GeneratePMemberFromDataRow(dt.Rows[0]);
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+        
+
+        public static List<PMembersBLL> GetPMembersByDeptIds(string deptIds, int rootId, string fullname, string sortParameter, string AirlinesWorking)
+        {
+            List<PMembersBLL> list = GenerateListPMembersFromDataTable(new PMembersDAL().GetByDeptIds(deptIds, rootId, fullname, 0, AirlinesWorking));
+
+            //if (!String.IsNullOrEmpty(sortParameter))
+            //    list.Sort(new EmployeesBLLComparer(sortParameter));
+
+            return list;
+        }
+
+        public void Update()
+        {
+            new PMembersDAL().Update(UserId, DateJoinP, DateJoinPOfficial, PlaceJoinP, PCardNo, PMemberRemarks, PMemberStatus);
+        }
+
+        private static List<PMembersBLL> GenerateListPMembersFromDataTable(DataTable dt)
+        {
+            List<PMembersBLL> lstPMembers = new List<PMembersBLL>();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                lstPMembers.Add(GeneratePMemberFromDataRow(dr));
+            }
+
+            return lstPMembers;
+        }
+        private static PMembersBLL GeneratePMemberFromDataRow(DataRow dr)
+        {
+            #region Employee
+            PMembersBLL objPMembersBLL = new PMembersBLL(
+                dr[EmployeeKeys.FIELD_EMPLOYEES_USERID] == DBNull.Value ? 0 : (int)dr[EmployeeKeys.FIELD_EMPLOYEES_USERID],
+                dr[EmployeeKeys.FIELD_EMPLOYEES_USERNAME] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_USERNAME],
+                dr[EmployeeKeys.FIELD_EMPLOYEES_EMPLOYEE_CODE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_EMPLOYEE_CODE],
+                dr[EmployeeKeys.FIELD_EMPLOYEES_PASSWORD] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_PASSWORD],
+                dr[EmployeeKeys.FIELD_EMPLOYEES_FULLNAME] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_FULLNAME],
+                dr[EmployeeKeys.FIELD_EMPLOYEES_BIRTHDAY] == DBNull.Value ? FormatDate.GetSQLDateMinValue : (DateTime)dr[EmployeeKeys.FIELD_EMPLOYEES_BIRTHDAY]
+                );
+
+            /// General
+            objPMembersBLL.Marriage = dr[EmployeeKeys.FIELD_EMPLOYEES_MARRIAGE] == DBNull.Value ? false : (bool)dr[EmployeeKeys.FIELD_EMPLOYEES_MARRIAGE];
+            objPMembersBLL.Sex = dr[EmployeeKeys.FIELD_EMPLOYEES_SEX] == DBNull.Value ? 2 : (int)dr[EmployeeKeys.FIELD_EMPLOYEES_SEX];
+            objPMembersBLL.JoinDate = dr[EmployeeKeys.FIELD_EMPLOYEES_JOINDATE] == DBNull.Value ? FormatDate.GetSQLDateMinValue : (DateTime)dr[EmployeeKeys.FIELD_EMPLOYEES_JOINDATE];
+            objPMembersBLL.JoinCompanyDate = dr[EmployeeKeys.Field_Employees_JoinCompanyDate] == DBNull.Value ? FormatDate.GetSQLDateMinValue : (DateTime)dr[EmployeeKeys.Field_Employees_JoinCompanyDate];
+            objPMembersBLL.WorkingPhone = dr[EmployeeKeys.FIELD_EMPLOYEES_WORKING_PHONE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_WORKING_PHONE];
+            objPMembersBLL.HandPhone = dr[EmployeeKeys.FIELD_EMPLOYEES_HAND_PHONE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_HAND_PHONE];
+            objPMembersBLL.HomePhone = dr[EmployeeKeys.FIELD_EMPLOYEES_HOME_PHONE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_HOME_PHONE];
+            objPMembersBLL.AccountNo = dr[EmployeeKeys.FIELD_EMPLOYEES_ACCOUNT_NO] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_ACCOUNT_NO];
+            objPMembersBLL.ATMNo = dr[EmployeeKeys.FIELD_EMPLOYEES_ATM_NO] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_ATM_NO];
+            objPMembersBLL.BankName = dr[EmployeeKeys.FIELD_EMPLOYEES_BANK_NAME] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_BANK_NAME];
+            objPMembersBLL.HealthInsuranceNo = dr[EmployeeKeys.FIELD_EMPLOYEES_HEALTH_INSURANCE_NO] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_HEALTH_INSURANCE_NO];
+            objPMembersBLL.HealthInsuranceAddress = dr[EmployeeKeys.FIELD_EMPLOYEES_HEALTH_INSURANCE_ADDRESS] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_HEALTH_INSURANCE_ADDRESS];
+            objPMembersBLL.SocialInsuranceNo = dr[EmployeeKeys.FIELD_EMPLOYEES_SOCIAL_INSURANCE_NO] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_SOCIAL_INSURANCE_NO];
+            objPMembersBLL.Status = dr[EmployeeKeys.FIELD_EMPLOYEES_STATUS] == DBNull.Value ? 0 : (int)dr[EmployeeKeys.FIELD_EMPLOYEES_STATUS];
+
+            objPMembersBLL.LeaveDate = dr[EmployeeKeys.FIELD_EMPLOYEES_LeaveDate] == DBNull.Value ? FormatDate.GetSQLDateMinValue : (DateTime)dr[EmployeeKeys.FIELD_EMPLOYEES_LeaveDate];
+
+            /// CV
+            /// 
+            objPMembersBLL.FullName = dr[EmployeeKeys.FIELD_EMPLOYEES_FULLNAME] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_FULLNAME];
+            objPMembersBLL.FullName2 = dr[EmployeeKeys.Field_Employees_FullName2] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.Field_Employees_FullName2];
+            objPMembersBLL.OtherName = dr[EmployeeKeys.FIELD_EMPLOYEES_OTHERNAMES] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_OTHERNAMES];
+            objPMembersBLL.NormalNames = dr[EmployeeKeys.FIELD_EMPLOYEES_NORMALNAMES] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_NORMALNAMES];
+            objPMembersBLL.Sex = dr[EmployeeKeys.FIELD_EMPLOYEES_SEX] == DBNull.Value ? -1 : (int)dr[EmployeeKeys.FIELD_EMPLOYEES_SEX];
+            if (objPMembersBLL.Sex == 1)
+            {
+                objPMembersBLL.SexName = "Nam";
+            }
+            else if (objPMembersBLL.Sex == 0)
+            {
+                objPMembersBLL.SexName = "Nữ";
+            }
+            else
+            {
+                objPMembersBLL.SexName = "";
+            }
+            objPMembersBLL.Birthday = dr[EmployeeKeys.FIELD_EMPLOYEES_BIRTHDAY] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[EmployeeKeys.FIELD_EMPLOYEES_BIRTHDAY].ToString());
+
+            objPMembersBLL.DayOfBirth = dr[EmployeeKeys.Field_Employees_DayOfBirth] == DBNull.Value ? 0 : (int)dr[EmployeeKeys.Field_Employees_DayOfBirth];
+            objPMembersBLL.MonthOfBirth = dr[EmployeeKeys.Field_Employees_MonthOfBirth] == DBNull.Value ? 0 : (int)dr[EmployeeKeys.Field_Employees_MonthOfBirth];
+            objPMembersBLL.YearOfBirth = dr[EmployeeKeys.Field_Employees_YearOfBirth] == DBNull.Value ? 0 : (int)dr[EmployeeKeys.Field_Employees_YearOfBirth];
+
+            objPMembersBLL.BirthPlace = dr[EmployeeKeys.FIELD_EMPLOYEES_BIRTHPLACE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_BIRTHPLACE];
+            objPMembersBLL.NativePlace = dr[EmployeeKeys.FIELD_EMPLOYEES_NATIVEPLACE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_NATIVEPLACE];
+            objPMembersBLL.Resident = dr[EmployeeKeys.FIELD_EMPLOYEES_RESIDENT] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_RESIDENT];
+            objPMembersBLL.Live = dr[EmployeeKeys.FIELD_EMPLOYEES_LIVE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_LIVE];
+            objPMembersBLL.IdCard = dr[EmployeeKeys.FIELD_EMPLOYEES_IDCARD] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_IDCARD];
+            objPMembersBLL.DateOfIssue = dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_OF_ISSUE] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_OF_ISSUE].ToString());
+            objPMembersBLL.PlaceOfIssue = dr[EmployeeKeys.FIELD_EMPLOYEES_PLACE_OF_ISSUE] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_PLACE_OF_ISSUE];
+            objPMembersBLL.Nation = dr[EmployeeKeys.FIELD_EMPLOYEES_NATION] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_NATION];
+            objPMembersBLL.Nationality = dr[EmployeeKeys.FIELD_EMPLOYEES_NATIONALITY] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_NATIONALITY];
+            objPMembersBLL.Religion = dr[EmployeeKeys.FIELD_EMPLOYEES_RELIGION] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_RELIGION];
+            objPMembersBLL.Origin = dr[EmployeeKeys.FIELD_EMPLOYEES_ORIGIN] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_ORIGIN];
+            objPMembersBLL.DateJoinParty = dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_JOIN_PARTY] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_JOIN_PARTY]);
+            objPMembersBLL.PlaceJoinParty = dr[EmployeeKeys.FIELD_EMPLOYEES_PLACE_JOIN_PARTY] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_PLACE_JOIN_PARTY];
+            objPMembersBLL.DateOfEnlisted = dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_OF_ENLISTED] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_OF_ENLISTED].ToString());
+            objPMembersBLL.DateOfDemobilized = dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_OF_DEMOBILIZED] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_OF_DEMOBILIZED].ToString());
+            objPMembersBLL.ArmyRank = dr[EmployeeKeys.FIELD_EMPLOYEES_ARMYRANK] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_ARMYRANK];
+
+            //
+            try
+            {
+                objPMembersBLL.DateJoinCYU = dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_JOIN_CYU] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[EmployeeKeys.FIELD_EMPLOYEES_DATE_JOIN_CYU]);
+                objPMembersBLL.PlaceJoinCYU = dr[EmployeeKeys.FIELD_EMPLOYEES_PLACE_JOIN_CYU] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_PLACE_JOIN_CYU];
+            }
+            catch { }
+
+            try
+            {
+                objPMembersBLL.WorkedCompany = dr[EmployeeKeys.FIELD_EMPLOYEES_WORKED_COMPANY] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.FIELD_EMPLOYEES_WORKED_COMPANY];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.PositionName = dr[PositionKeys.FIELD_POSITION_NAME] == DBNull.Value ? string.Empty : (string)dr[PositionKeys.FIELD_POSITION_NAME];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.LevelPosition = dr[PositionKeys.Field_Position_LevelPosition] == DBNull.Value ? 0 : (int)dr[PositionKeys.Field_Position_LevelPosition];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.DepartmentCode = dr[DepartmentKeys.FIELD_DEPARTMENT_CODE] == DBNull.Value ? string.Empty : (string)dr[DepartmentKeys.FIELD_DEPARTMENT_CODE];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.DepartmentName = dr[DepartmentKeys.FIELD_DEPARTMENT_NAME] == DBNull.Value ? string.Empty : (string)dr[DepartmentKeys.FIELD_DEPARTMENT_NAME];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.DepartmentFullName = dr[DepartmentKeys.Field_Department_DepartmentFullName] == DBNull.Value ? string.Empty : (string)dr[DepartmentKeys.Field_Department_DepartmentFullName];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.DepartmentId = dr[DepartmentKeys.FIELD_DEPARTMENT_ID] == DBNull.Value ? 0 : (int)dr[DepartmentKeys.FIELD_DEPARTMENT_ID];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.RootId = dr[DepartmentKeys.FIELD_DEPARTMENT_ROOT_ID] == DBNull.Value ? 0 : (int)dr[DepartmentKeys.FIELD_DEPARTMENT_ROOT_ID];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.RootName = dr[DepartmentKeys.Field_Department_RootName] == DBNull.Value ? string.Empty : (string)dr[DepartmentKeys.Field_Department_RootName];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.ParentId = dr[DepartmentKeys.FIELD_DEPARTMENT_PARENT_ID] == DBNull.Value ? 0 : (int)dr[DepartmentKeys.FIELD_DEPARTMENT_PARENT_ID];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL.DepartmentLevel = dr[DepartmentKeys.Field_Department_Level] == DBNull.Value ? 0 : (int)dr[DepartmentKeys.Field_Department_Level];
+            }
+            catch { }
+
+            try
+            {
+                objPMembersBLL.TaxCode = dr[EmployeeKeys.Field_Employees_TaxCode] == DBNull.Value ? string.Empty : (string)dr[EmployeeKeys.Field_Employees_TaxCode];
+            }
+            catch { }
+
+            #endregion
+            try
+            {
+                objPMembersBLL._DateJoinP = dr[PMemberKeys.FIELD_PMEMBER_DATE_JOIN_P] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[PMemberKeys.FIELD_PMEMBER_DATE_JOIN_P]);
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL._DateJoinPOfficial = dr[PMemberKeys.FIELD_PMEMBER_DATE_JOIN_P_OFFICIAL] == DBNull.Value ? FormatDate.GetSQLDateMinValue : Convert.ToDateTime(dr[PMemberKeys.FIELD_PMEMBER_DATE_JOIN_P_OFFICIAL]);
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL._PlaceJoinP = dr[PMemberKeys.FIELD_PMEMBER_PLACE_JOIN_P] == DBNull.Value ? string.Empty : (string)dr[PMemberKeys.FIELD_PMEMBER_PLACE_JOIN_P];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL._PCardNo = dr[PMemberKeys.FIELD_PMEMBER_CARD_NO] == DBNull.Value ? string.Empty : (string)dr[PMemberKeys.FIELD_PMEMBER_CARD_NO];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL._PMemberRemarks = dr[PMemberKeys.FIELD_PMEMBER_REMARKS] == DBNull.Value ? string.Empty : (string)dr[PMemberKeys.FIELD_PMEMBER_REMARKS];
+            }
+            catch { }
+            try
+            {
+                objPMembersBLL._PMemberStatus = dr[PMemberKeys.FIELD_PMEMBER_STATUS] == DBNull.Value ? 0 : Convert.ToInt32(dr[PMemberKeys.FIELD_PMEMBER_STATUS]);
+            }
+            catch { }
+
+            return objPMembersBLL;
+        }
+
+        
+
+        public static long Add(int userId, DateTime dateJoinP, DateTime dateJoinPOfficial, string placeJoinP, string pCardNo, int pMemberStatus)
+        {
+            return new PMembersDAL().Add(userId, dateJoinP, dateJoinPOfficial, placeJoinP, pCardNo, pMemberStatus);
+        }
+
+        public static DataTable GetEmployeesForImport(string fullname)
+        {
+            return new PMembersDAL().GetEmployeesForImport(fullname);
+        }
+        public static DataTable GetDocTypes(int recordType)
+        {
+            return new PMembersDAL().GetDocTypes(recordType);
+        }
+        public static long AddDoc(int userId, int docTypeId, string docName, string docName2, string fileName, int year, string remarks)
+        {
+            return new PMembersDAL().AddDoc(userId, docTypeId, docName, docName2, fileName, year, remarks);
+        }
+        public static DataTable GetDocLists(int userId, int recordType, int docTypeId, string docName, int docYear)
+        {
+            return new PMembersDAL().GetDocLists(userId, recordType, docTypeId, docName, docYear);
+        }
+        public static DataTable GetDoc(int docId)
+        {
+            return new PMembersDAL().GetDoc(docId);
+        }
+        public static long DeleteDoc(int docId)
+        {
+            return new PMembersDAL().DeleteDoc(docId);
+        }
+        #endregion
+
+
+    }
+}

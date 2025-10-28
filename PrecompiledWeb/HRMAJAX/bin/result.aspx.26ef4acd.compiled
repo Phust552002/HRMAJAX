@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Recruitment/LoadUnLoadCargo/Result.aspx" hash="2494adcdd" filehash="f5096b8fd54a88a1" flags="110000" assembly="App_Web_hqsw0wtr" type="ASP.recruitment_loadunloadcargo_result_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/Recruitment/LoadUnLoadCargo/Result.aspx" />
+        <filedep name="/HRMAJAX/Recruitment/LoadUnLoadCargo/Result.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ActionMenu.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ActionMenu.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

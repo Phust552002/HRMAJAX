@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/ucTitle.ascx" hash="2494adcdd" filehash="e658e42121924e3b" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_uctitle_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

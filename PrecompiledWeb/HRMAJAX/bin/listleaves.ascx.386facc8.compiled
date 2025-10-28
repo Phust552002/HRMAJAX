@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Leave/UserControls/ListLeaves.ascx" hash="2494adcdd" filehash="601a69d4db91b1d1" flags="110000" assembly="App_Web_ynimsypd" type="ASP.leave_usercontrols_listleaves_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Leave/UserControls/ListLeaves.ascx" />
+        <filedep name="/HRMAJAX/Leave/UserControls/ListLeaves.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucDateFilter.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucDateFilter.ascx.cs" />
+    </filedeps>
+</preserve>

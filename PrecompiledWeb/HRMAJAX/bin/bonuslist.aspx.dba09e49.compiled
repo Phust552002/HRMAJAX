@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Bonus/BonusList.aspx" hash="2494adcdd" filehash="57ce3ef4c86c67bf" flags="110000" assembly="App_Web_1ofh0yga" type="ASP.bonus_bonuslist_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Bonus/BonusList.aspx" />
+        <filedep name="/HRMAJAX/Bonus/BonusList.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

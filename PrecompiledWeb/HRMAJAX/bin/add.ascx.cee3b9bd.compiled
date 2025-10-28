@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Contracts/UserControls/Add.ascx" hash="2494adcdd" filehash="f7ee3f566593eb92" flags="110000" assembly="App_Web_2zw3nmuk" type="ASP.contracts_usercontrols_add_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Contracts/UserControls/Add.ascx" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/Add.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+    </filedeps>
+</preserve>

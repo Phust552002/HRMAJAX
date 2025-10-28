@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Income/UserControls/_WorkdaysAndCoefficients.ascx" hash="2494adcdd" filehash="49888b270eb377f2" flags="110000" assembly="App_Web_p5x3yylf" type="ASP.income_usercontrols__workdaysandcoefficients_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Income/UserControls/_WorkdaysAndCoefficients.ascx" />
+        <filedep name="/HRMAJAX/Income/UserControls/WorkdaysAndCoefficients.ascx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRMBLL</RootNamespace>
+    <AssemblyName>HRMBLL</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.4.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.2.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Download\CodeProject\ExportExcel\bin\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=2.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Download\CodeProject\ExportExcel\bin\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Download\CodeProject\ExportExcel\bin\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLHelper\ExportExcelData.cs" />
+    <Compile Include="BLLHelper\IncomeTabs.cs" />
+    <Compile Include="BLLHelper\Tabs.cs" />
+    <Compile Include="CoefficientsBLL.cs" />
+    <Compile Include="H0\CityWardBLL.cs" />
+    <Compile Include="H1\BonusEmployeeConditionBLL.cs" />
+    <Compile Include="H0\DepartmentEmployeeBLL.cs" />
+    <Compile Include="H0\DepartmentPositionBLL.cs" />
+    <Compile Include="H0\EmployeeContractBLLComparer.cs" />
+    <Compile Include="H0\EmployeeContractCoefficientBLL.cs" />
+    <Compile Include="H0\EmployeeEducationLevelsBLL.cs" />
+    <Compile Include="H0\EmployeeIdiFingerPrintBLL.cs" />
+    <Compile Include="H0\EmployeeJobHistoryBLL.cs" />
+    <Compile Include="H0\EmployeeLeaveScheduleBLL.cs" />
+    <Compile Include="H0\EmployeeRelationBLL.cs" />
+    <Compile Include="H0\EmployeesBLLComparer.cs" />
+    <Compile Include="H0\EmployeeTimeBillBLL.cs" />
+    <Compile Include="H0\Helper\DefaultValues.cs" />
+    <Compile Include="H0\DepartmentsBLL.cs" />
+    <Compile Include="H0\EmployeesBLL.cs" />
+    <Compile Include="H0\Helper\EmployeeLeaveScheduleBLLExport.cs" />
+    <Compile Include="H0\Helper\EmployeesBLLExportData.cs" />
+    <Compile Include="H0\Helper\EmployeesContractBLLExportData.cs" />
+    <Compile Include="H0\Helper\EmployeeTimeBillBLLExportData.cs" />
+    <Compile Include="H0\Helper\STAEmployeeBLLExportData.cs" />
+    <Compile Include="H0\HolidaysBLL.cs" />
+    <Compile Include="H0\LeaveTypesBLL.cs" />
+    <Compile Include="H0\PositionsBLL.cs" />
+    <Compile Include="H0\RelationTypesBLL.cs" />
+    <Compile Include="H0\SiteMapBLL.cs" />
+    <Compile Include="H0\Statistic\STAEmployeeBLL.cs" />
+    <Compile Include="H0\UnofficialDepartmentsBLL.cs" />
+    <Compile Include="H0\UnofficialEmployeesBLL.cs" />
+    <Compile Include="H0\UnofficialEmployeesBLLComparer.cs" />
+    <Compile Include="H0\UserRolesBLL.cs" />
+    <Compile Include="H1\BonusTitleBLL.cs" />
+    <Compile Include="H1\CalulateSalary\AllowancesBLL.cs" />
+    <Compile Include="H1\CalulateSalary\BasicSalaryBLL.cs" />
+    <Compile Include="H1\CalulateSalary\ContributionsBLL.cs" />
+    <Compile Include="H1\CalulateSalary\ExecuteBLL.cs" />
+    <Compile Include="H1\CalulateSalary\OverTimeSalaryBLL.cs" />
+    <Compile Include="H1\CalulateSalary\ProductivitySalaryBLL.cs" />
+    <Compile Include="H1\CoefficientEmployeeFinalBLL.cs" />
+    <Compile Include="H1\CoefficientEmployeesBLL.cs" />
+    <Compile Include="H0\ContractTypesBLL.cs" />
+    <Compile Include="H0\EmployeeContractBLL.cs" />
+    <Compile Include="H1\CoefficientEmployeesBLLComparer.cs" />
+    <Compile Include="H1\CoefficientNamePositionsBLL.cs" />
+    <Compile Include="H1\Helper\CoefficientEmployeeFinalBLLExportData.cs" />
+    <Compile Include="H1\Helper\ConstantExcelFields.cs" />
+    <Compile Include="H1\Helper\DefaultValues.cs" />
+    <Compile Include="H0\EmployeeLeaveBLL.cs" />
+    <Compile Include="H1\Helper\ExportData.cs" />
+    <Compile Include="H1\Helper\IncomeBLLExportData.cs" />
+    <Compile Include="H1\Helper\LCBCoefficientEmployeeBLLExportData.cs" />
+    <Compile Include="H1\Helper\PITDeductionBLLExportData.cs" />
+    <Compile Include="H1\Helper\WorkdayEmployeesBLLExportData.cs" />
+    <Compile Include="H1\Helper\WorkdayEmployeesBLLLExportData.cs" />
+    <Compile Include="H1\HTCVCatalogueBLL.cs" />
+    <Compile Include="H1\HTCVEmployeeBLL.cs" />
+    <Compile Include="H1\HTCVEmployeeBLLComparer.cs" />
+    <Compile Include="H1\IncomesBLL.cs" />
+    <Compile Include="H1\CoefficientLevelsBLL.cs" />
+    <Compile Include="H1\IncomesBLLComparer.cs" />
+    <Compile Include="H1\LCBCoefficientEmployeeBLL.cs" />
+    <Compile Include="H1\LNSCoefficientEmployeeBLL.cs" />
+    <Compile Include="H1\CoefficientNamesBLL.cs" />
+    <Compile Include="H1\CoefficientValuesBLL.cs" />
+    <Compile Include="ContractTypesBLL.cs" />
+    <Compile Include="BLLHelper\DefaultValues.cs" />
+    <Compile Include="DepartmentsBLL.cs" />
+    <Compile Include="EmployeeDeptPositionBLL.cs" />
+    <Compile Include="EmployeeIncomeBLL.cs" />
+    <Compile Include="EmployeesBLL.cs" />
+    <Compile Include="ExcelImport.cs" />
+    <Compile Include="BLLHelper\ExcelHelper.cs" />
+    <Compile Include="BLLHelper\Utilities.cs" />
+    <Compile Include="H1\OverTimeTypeBLL.cs" />
+    <Compile Include="H1\PITDeductionBLL.cs" />
+    <Compile Include="H1\PregnantAllownceBLL.cs" />
+    <Compile Include="H1\SalaryRegulationBLL.cs" />
+    <Compile Include="H1\UnitPriceDetailsBLL.cs" />
+    <Compile Include="H1\WageFundsBLL.cs" />
+    <Compile Include="H1\WorkdayCoefficientEmployeesFinalBLL.cs" />
+    <Compile Include="H1\WorkdayEmployeesBLL.cs" />
+    <Compile Include="H1\WorkdayEmployeesBLLL.cs" />
+    <Compile Include="H1\WorkdayOverTimeBLL.cs" />
+    <Compile Include="H1\WorkDayPrivilegeBLL.cs" />
+    <Compile Include="H2\CandidateEducationLevelsBLL.cs" />
+    <Compile Include="H2\CandidatesBLL.cs" />
+    <Compile Include="H2\CandidateTrainingJobHistoryBLL.cs" />
+    <Compile Include="H2\EducationLevelsBLL.cs" />
+    <Compile Include="H2\Helper\CandidateBLLExportExcel.cs" />
+    <Compile Include="H2\Helper\ExportData.cs" />
+    <Compile Include="H2\SessionsBLL.cs" />
+    <Compile Include="H3\DecisionEmployeesBLL.cs" />
+    <Compile Include="H3\DecisionsBLL.cs" />
+    <Compile Include="H4\RepresentativeBLL.cs" />
+    <Compile Include="H5\TourStageBLL.cs" />
+    <Compile Include="H5\TravelerListBLL.cs" />
+    <Compile Include="H6\DepartmentsBLL.cs" />
+    <Compile Include="H6\PMembersBLL.cs" />
+    <Compile Include="H8\Covid19BLL.cs" />
+    <Compile Include="H\AdministrationBLL.cs" />
+    <Compile Include="H\BonusNamesBLL.cs" />
+    <Compile Include="H\BonusValuesBLL.cs" />
+    <Compile Include="H\BulletinBLL.cs" />
+    <Compile Include="H\CoefficientsBLL.cs" />
+    <Compile Include="H\CommandLogBLL.cs" />
+    <Compile Include="H\EmployeeIncomeBLL.cs" />
+    <Compile Include="H\Helper\BonusValuesExportData.cs" />
+    <Compile Include="H\Helper\DefaultValues.cs" />
+    <Compile Include="H\Helper\IncomesMonthBLLExportData.cs" />
+    <Compile Include="H\ImportDataBLL.cs" />
+    <Compile Include="H\IncomesMonthBLL.cs" />
+    <Compile Include="H\TimeKeepingBLL.cs" />
+    <Compile Include="IncomeMonthBLL.cs" />
+    <Compile Include="PositionsBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="H0\SecurityControlBLL.cs" />
+    <Compile Include="TimeKeepingBLL.cs" />
+    <Compile Include="UserRolesBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRMDAL\HRMDAL.csproj">
+      <Project>{B190BD77-0BE9-4345-8106-7C2C21F737FA}</Project>
+      <Name>HRMDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMUtil\HRMUtil.csproj">
+      <Project>{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}</Project>
+      <Name>HRMUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

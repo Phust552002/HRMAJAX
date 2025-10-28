@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/ShareHolder/BQSLHDQTReport.aspx" hash="2494adcdd" filehash="33b75e21e328d08d" flags="110000" assembly="App_Web_3qxqwfzc" type="ASP.shareholder_bqslhdqtreport_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/ShareHolder/BQSLHDQTReport.aspx" />
+        <filedep name="/HRMAJAX/ShareHolder/BQSLHDQTReport.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

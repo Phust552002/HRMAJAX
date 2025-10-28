@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/ShareHolder/BQDLAdd.aspx" hash="2494adcdd" filehash="75988733cbd8d9b4" flags="110000" assembly="App_Web_3qxqwfzc" type="ASP.shareholder_bqdladd_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/ShareHolder/BQDLAdd.aspx" />
+        <filedep name="/HRMAJAX/ShareHolder/BQDLAdd.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

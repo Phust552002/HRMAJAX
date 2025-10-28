@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Recruitment/UserControl/ucTitle.ascx" hash="2494adcdd" filehash="8737af142089a4fe" flags="110000" assembly="App_Web_osha3ska" type="ASP.recruitment_usercontrol_uctitle_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Recruitment/UserControl/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/Recruitment/UserControl/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

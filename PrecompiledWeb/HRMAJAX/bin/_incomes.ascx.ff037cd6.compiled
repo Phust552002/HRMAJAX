@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Income/UserControls/_Incomes.ascx" hash="2494adcdd" filehash="62b53864b80c72a1" flags="110000" assembly="App_Web_fj1gnu4k" type="ASP.income_usercontrols__incomes_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Income/UserControls/_Incomes.ascx" />
+        <filedep name="/HRMAJAX/Income/UserControls/Incomes.ascx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Income/Print.aspx" hash="2494adcdd" filehash="c6ae09079668cb35" flags="110000" assembly="App_Web_y5epxxfw" type="ASP.income_print_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Income/Print.aspx" />
+        <filedep name="/HRMAJAX/Income/Print.aspx.cs" />
+    </filedeps>
+</preserve>

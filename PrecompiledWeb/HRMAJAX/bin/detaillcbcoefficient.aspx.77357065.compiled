@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Coefficients/DetailLCBCoefficient.aspx" hash="2494adcdd" filehash="6af20e03ca82e66d" flags="110000" assembly="App_Web_amynuw53" type="ASP.coefficients_detaillcbcoefficient_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Coefficients/DetailLCBCoefficient.aspx" />
+        <filedep name="/HRMAJAX/Coefficients/DetailLCBCoefficient.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

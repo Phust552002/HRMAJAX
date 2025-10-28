@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Coefficients/UserControls/List.ascx" hash="2494adcdd" filehash="702dcdd6f9ebf942" flags="110000" assembly="App_Web_5tzosfro" type="ASP.coefficients_usercontrols_list_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Coefficients/UserControls/List.ascx" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/List.ascx.cs" />
+    </filedeps>
+</preserve>

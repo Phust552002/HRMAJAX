@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Coefficients/UserControls/UpdCoefficientFinal.ascx" hash="2494adcdd" filehash="f83fb0b203b8bf17" flags="110000" assembly="App_Web_tznincgy" type="ASP.coefficients_usercontrols_updcoefficientfinal_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Coefficients/UserControls/UpdCoefficientFinal.ascx" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/UpdCoefficientFinal.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+    </filedeps>
+</preserve>

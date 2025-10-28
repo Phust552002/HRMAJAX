@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Employee/UserControls/Coefficients.ascx" hash="2494adcdd" filehash="e65f55ef56f19ebb" flags="110000" assembly="App_Web_k1p3phal" type="ASP.employee_usercontrols_coefficients_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Coefficients/UserControls/LCB.ascx" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/LCB.ascx.cs" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/List.ascx" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/List.ascx.cs" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/LNS.ascx" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/LNS.ascx.cs" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/Others.ascx" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/Others.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Coefficients.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Coefficients.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx.cs" />
+    </filedeps>
+</preserve>

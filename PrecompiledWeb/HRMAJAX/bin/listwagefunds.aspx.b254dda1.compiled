@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/CalculatedSalary/ListWageFunds.aspx" hash="2494adcdd" filehash="8460dfb0e1f7d402" flags="110000" assembly="App_Web_1a4kougn" type="ASP.calculatedsalary_listwagefunds_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/CalculatedSalary/ListWageFunds.aspx" />
+        <filedep name="/HRMAJAX/CalculatedSalary/ListWageFunds.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/HeaderContent.ascx" />
+        <filedep name="/HRMAJAX/UserControls/HeaderContent.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

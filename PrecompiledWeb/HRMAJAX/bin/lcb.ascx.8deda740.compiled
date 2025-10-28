@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Coefficients/UserControls/LCB.ascx" hash="2494adcdd" filehash="fa00f8ec8292887e" flags="110000" assembly="App_Web_tznincgy" type="ASP.coefficients_usercontrols_lcb_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Coefficients/UserControls/LCB.ascx" />
+        <filedep name="/HRMAJAX/Coefficients/UserControls/LCB.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+    </filedeps>
+</preserve>

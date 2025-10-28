@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Recruitment/Speciality/AddTheory.aspx" hash="2494adcdd" filehash="ab15a32a98a12df8" flags="110000" assembly="App_Web_ptks41ys" type="ASP.recruitment_speciality_addtheory_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/Recruitment/Speciality/AddTheory.aspx" />
+        <filedep name="/HRMAJAX/Recruitment/Speciality/AddTheory.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

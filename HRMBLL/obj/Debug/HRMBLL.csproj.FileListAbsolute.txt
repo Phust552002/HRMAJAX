@@ -1,0 +1,120 @@
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMBLL.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMBLL.pdb
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMDAL.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMUtil.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMDAL.pdb
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMUtil.pdb
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\obj\Debug\HRMBLL.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\obj\Debug\HRMBLL.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMBLL.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMBLL.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\obj\Debug\HRMBLL.csprojResolveAssemblyReference.cache
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\obj\Debug\HRMBLL.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMBLL\obj\Debug\HRMBLL.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\bin\Debug\HRMBLL.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\bin\Debug\HRMBLL.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\bin\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\bin\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\obj\Debug\HRMBLL.csprojResolveAssemblyReference.cache
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\obj\Debug\HRMBLL.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMBLL\obj\Debug\HRMBLL.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.dll
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csprojResolveAssemblyReference.cache
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.dll
+F:\Working\Sags Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.pdb
+F:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.dll
+F:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.pdb
+F:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll
+F:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.dll
+F:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.pdb
+F:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.pdb
+F:\Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csprojResolveAssemblyReference.cache
+F:\Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.dll
+F:\Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.pdb
+F:\Projects\HRM\WEB\HRMBLL\bin\Debug\stdole.dll
+D:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.dll
+D:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.pdb
+D:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll
+D:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.dll
+D:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.pdb
+D:\Projects\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.pdb
+D:\Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csprojResolveAssemblyReference.cache
+D:\Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.dll
+D:\Projects\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.pdb
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.dll
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.pdb
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.dll
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\stdole.dll
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.pdb
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll.config
+D:\Projects\Giang\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.pdb
+D:\Projects\Giang\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.dll
+D:\Projects\Giang\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.pdb
+D:\Projects\Giang\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csprojAssemblyReference.cache
+D:\Projects\Giang\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.CoreCompileInputs.cache
+D:\Projects\Giang\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.CopyComplete
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.dll
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.pdb
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.dll
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\stdole.dll
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.pdb
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll.config
+C:\SAGS\TEST\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.pdb
+C:\SAGS\TEST\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.AssemblyReference.cache
+C:\SAGS\TEST\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.CoreCompileInputs.cache
+C:\SAGS\TEST\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.CopyComplete
+C:\SAGS\TEST\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.dll
+C:\SAGS\TEST\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.pdb
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.dll
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\HRMBLL.pdb
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.dll
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\stdole.dll
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.pdb
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\HRMDAL.dll.config
+C:\SAGS\Software\HRM\WEB\HRMBLL\bin\Debug\HRMUtil.pdb
+C:\SAGS\Software\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.AssemblyReference.cache
+C:\SAGS\Software\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.CoreCompileInputs.cache
+C:\SAGS\Software\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.Up2Date
+C:\SAGS\Software\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.dll
+C:\SAGS\Software\HRM\WEB\HRMBLL\obj\Debug\HRMBLL.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\HRMBLL.dll
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\HRMBLL.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\HRMDAL.dll
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\HRMUtil.dll
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\stdole.dll
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\HRMDAL.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\HRMDAL.dll.config
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\bin\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.AssemblyReference.cache
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.CoreCompileInputs.cache
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\obj\Debug\HRMBLL.csproj.CopyComplete
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\obj\Debug\HRMBLL.dll
+C:\Users\haunguyen\Desktop\WEB\HRMBLL\obj\Debug\HRMBLL.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\HRMBLL.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\HRMBLL.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\HRMDAL.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\HRMUtil.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\stdole.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\HRMDAL.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\HRMDAL.dll.config
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\bin\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.csproj.AssemblyReference.cache
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.csproj.CoreCompileInputs.cache
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.csproj.CopyComplete
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMBLL\obj\Debug\HRMBLL.pdb

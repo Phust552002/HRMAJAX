@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Tax/EmployeeRelationAdd.aspx" hash="2494adcdd" filehash="e80d42b51310a9f9" flags="110000" assembly="App_Web_vfxvvgfs" type="ASP.tax_employeerelationadd_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Maternal.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Maternal.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/MyFamily.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/MyFamily.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Others.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Others.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Perternal.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Perternal.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/UBFByMarriage.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/UBFByMarriage.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/Tax/EmployeeRelationAdd.aspx" />
+        <filedep name="/HRMAJAX/Tax/EmployeeRelationAdd.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/Tabs.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Tabs.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Recruitment/RegistrationDetail.aspx" hash="2494adcdd" filehash="254e4b0f8e6387" flags="110000" assembly="App_Web_vglvvffj" type="ASP.recruitment_registrationdetail_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Recruitment/RegistrationDetail.aspx" />
+        <filedep name="/HRMAJAX/Recruitment/RegistrationDetail.aspx.cs" />
+        <filedep name="/HRMAJAX/Recruitment/UserControl/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/Recruitment/UserControl/ucTitle.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+    </filedeps>
+</preserve>

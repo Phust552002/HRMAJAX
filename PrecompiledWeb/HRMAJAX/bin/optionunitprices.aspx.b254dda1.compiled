@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/CalculatedSalary/OptionUnitPrices.aspx" hash="2494adcdd" filehash="7574d512a6f9d879" flags="110000" assembly="App_Web_1a4kougn" type="ASP.calculatedsalary_optionunitprices_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/CalculatedSalary/OptionUnitPrices.aspx" />
+        <filedep name="/HRMAJAX/CalculatedSalary/OptionUnitPrices.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Employee/UserControls/Family/Maternal.ascx" hash="2494adcdd" filehash="d271d83d6d2fb84" flags="110000" assembly="App_Web_k2hghs5y" type="ASP.employee_usercontrols_family_maternal_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Maternal.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Maternal.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx.cs" />
+    </filedeps>
+</preserve>

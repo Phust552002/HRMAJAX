@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Recruitment/Default.aspx" hash="2494adcdd" filehash="a1d2784640732ee1" flags="110000" assembly="App_Web_ft1n3z3l" type="ASP.recruitment_default_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Recruitment/Default.aspx" />
+        <filedep name="/HRMAJAX/Recruitment/Default.aspx.cs" />
+    </filedeps>
+</preserve>

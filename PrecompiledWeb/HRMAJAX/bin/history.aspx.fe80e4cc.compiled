@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Contracts/History.aspx" hash="2494adcdd" filehash="612b4a9b2f961a59" flags="110000" assembly="App_Web_ik21qyae" type="ASP.contracts_history_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Contracts/History.aspx" />
+        <filedep name="/HRMAJAX/Contracts/History.aspx.cs" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/ContractFilter.ascx" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/ContractFilter.ascx.cs" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/SaveCnt.ascx" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/SaveCnt.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Ele.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Ele.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/Title.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Title.ascx.cs" />
+    </filedeps>
+</preserve>

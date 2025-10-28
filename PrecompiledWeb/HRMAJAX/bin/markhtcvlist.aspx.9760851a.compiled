@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Workdays/MarkHTCVList.aspx" hash="2494adcdd" filehash="c6a233ed72a1c1fd" flags="110000" assembly="App_Web_op225dgh" type="ASP.workdays_markhtcvlist_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/ActionMenu.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ActionMenu.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+        <filedep name="/HRMAJAX/Workdays/MarkHTCVList.aspx" />
+        <filedep name="/HRMAJAX/Workdays/MarkHTCVList.aspx.cs" />
+    </filedeps>
+</preserve>

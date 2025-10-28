@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Employee/UserControls/Ele.ascx" hash="2494adcdd" filehash="3b8f9f3c26d6abd1" flags="110000" assembly="App_Web_k1p3phal" type="ASP.employee_usercontrols_ele_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Employee/UserControls/Ele.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Ele.ascx.cs" />
+    </filedeps>
+</preserve>

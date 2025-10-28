@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Workdays/UserControls/SendTimeKeeping.ascx" hash="2494adcdd" filehash="c3e0a310549bcf97" flags="110000" assembly="App_Web_uybterkh" type="ASP.workdays_usercontrols_sendtimekeeping_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Workdays/UserControls/SendTimeKeeping.ascx" />
+        <filedep name="/HRMAJAX/Workdays/UserControls/SendTimeKeeping.ascx.cs" />
+    </filedeps>
+</preserve>

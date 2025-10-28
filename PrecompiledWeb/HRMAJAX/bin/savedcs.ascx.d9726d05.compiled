@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Decisions/UserControls/SaveDcs.ascx" hash="2494adcdd" filehash="4d8ca525a0a8c22f" flags="110000" assembly="App_Web_pv5e5gje" type="ASP.decisions_usercontrols_savedcs_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Decisions/UserControls/SaveDcs.ascx" />
+        <filedep name="/HRMAJAX/Decisions/UserControls/SaveDcs.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+    </filedeps>
+</preserve>

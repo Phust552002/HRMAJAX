@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Leave/UserControls/AddSchedule.ascx" hash="2494adcdd" filehash="2d456d7ad5f44040" flags="110000" assembly="App_Web_ynimsypd" type="ASP.leave_usercontrols_addschedule_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Leave/UserControls/AddSchedule.ascx" />
+        <filedep name="/HRMAJAX/Leave/UserControls/AddSchedule.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+    </filedeps>
+</preserve>

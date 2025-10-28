@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/Family.ascx" hash="2494adcdd" filehash="4740e722ab03ea0a" flags="110000" assembly="App_Web_y23iis42" type="ASP.usercontrols_family_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Maternal.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Maternal.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/MyFamily.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/MyFamily.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Others.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Others.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Perternal.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/Perternal.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/UBFByMarriage.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Family/UBFByMarriage.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/Family.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Family.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx.cs" />
+    </filedeps>
+</preserve>

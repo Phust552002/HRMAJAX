@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/CalculatedSalary/UserControls/IncomesSAC.ascx" hash="2494adcdd" filehash="9b1b86a1a7eabb53" flags="110000" assembly="App_Web_j31g03be" type="ASP.calculatedsalary_usercontrols_incomessac_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/CalculatedSalary/UserControls/IncomesSAC.ascx" />
+        <filedep name="/HRMAJAX/CalculatedSalary/UserControls/IncomesSAC.ascx.cs" />
+    </filedeps>
+</preserve>

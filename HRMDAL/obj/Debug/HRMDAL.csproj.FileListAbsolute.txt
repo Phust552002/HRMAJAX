@@ -1,0 +1,98 @@
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMDAL.dll.config
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMDAL.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMDAL.pdb
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMUtil.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMUtil.pdb
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\obj\Debug\HRMDAL.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\obj\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMDAL.dll.config
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\obj\Debug\HRMDAL.csprojResolveAssemblyReference.cache
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\obj\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMDAL\obj\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\bin\Debug\HRMDAL.dll.config
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\bin\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\bin\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\obj\Debug\HRMDAL.csprojResolveAssemblyReference.cache
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\obj\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMDAL\obj\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll.config
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csprojResolveAssemblyReference.cache
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.dll
+F:\Working\Sags Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.pdb
+F:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll.config
+F:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll
+F:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.pdb
+F:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.dll
+F:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.pdb
+F:\Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csprojResolveAssemblyReference.cache
+F:\Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.dll
+F:\Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.pdb
+D:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll.config
+D:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll
+D:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.pdb
+D:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.dll
+D:\Projects\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.pdb
+D:\Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csprojResolveAssemblyReference.cache
+D:\Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.dll
+D:\Projects\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.pdb
+D:\Projects\Giang\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll.config
+D:\Projects\Giang\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll
+D:\Projects\Giang\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.pdb
+D:\Projects\Giang\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.dll
+D:\Projects\Giang\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.pdb
+D:\Projects\Giang\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.dll
+D:\Projects\Giang\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.pdb
+D:\Projects\Giang\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csprojAssemblyReference.cache
+D:\Projects\Giang\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.CoreCompileInputs.cache
+D:\Projects\Giang\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.CopyComplete
+C:\SAGS\TEST\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll.config
+C:\SAGS\TEST\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll
+C:\SAGS\TEST\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.pdb
+C:\SAGS\TEST\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.dll
+C:\SAGS\TEST\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.pdb
+C:\SAGS\TEST\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.AssemblyReference.cache
+C:\SAGS\TEST\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.CoreCompileInputs.cache
+C:\SAGS\TEST\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.CopyComplete
+C:\SAGS\TEST\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.dll
+C:\SAGS\TEST\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.pdb
+C:\SAGS\Software\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll.config
+C:\SAGS\Software\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.dll
+C:\SAGS\Software\HRM\WEB\HRMDAL\bin\Debug\HRMDAL.pdb
+C:\SAGS\Software\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.dll
+C:\SAGS\Software\HRM\WEB\HRMDAL\bin\Debug\HRMUtil.pdb
+C:\SAGS\Software\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.AssemblyReference.cache
+C:\SAGS\Software\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.CoreCompileInputs.cache
+C:\SAGS\Software\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.Up2Date
+C:\SAGS\Software\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.dll
+C:\SAGS\Software\HRM\WEB\HRMDAL\obj\Debug\HRMDAL.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\bin\Debug\HRMDAL.dll.config
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\bin\Debug\HRMDAL.dll
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\bin\Debug\HRMDAL.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\bin\Debug\HRMUtil.dll
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\bin\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.AssemblyReference.cache
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.CoreCompileInputs.cache
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\obj\Debug\HRMDAL.csproj.CopyComplete
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\obj\Debug\HRMDAL.dll
+C:\Users\haunguyen\Desktop\WEB\HRMDAL\obj\Debug\HRMDAL.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\bin\Debug\HRMDAL.dll.config
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\bin\Debug\HRMDAL.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\bin\Debug\HRMDAL.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\bin\Debug\HRMUtil.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\bin\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.csproj.AssemblyReference.cache
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.csproj.CoreCompileInputs.cache
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.csproj.CopyComplete
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMDAL\obj\Debug\HRMDAL.pdb

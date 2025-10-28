@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Bonus/UserControls/Holidays.ascx" hash="2494adcdd" filehash="b3326734cc3b71e1" flags="110000" assembly="App_Web_rfolhcfi" type="ASP.bonus_usercontrols_holidays_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Bonus/UserControls/Holidays.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/Holidays.ascx.cs" />
+    </filedeps>
+</preserve>

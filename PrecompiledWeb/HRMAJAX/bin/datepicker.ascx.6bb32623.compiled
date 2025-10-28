@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/DatePicker.ascx" hash="2494adcdd" filehash="6ffbee865f6cc68b" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_datepicker_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+    </filedeps>
+</preserve>

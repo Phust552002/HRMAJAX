@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/ListTotalCounts.ascx" hash="2494adcdd" filehash="16b99ce152978328" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_listtotalcounts_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/ListTotalCounts.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ListTotalCounts.ascx.cs" />
+    </filedeps>
+</preserve>

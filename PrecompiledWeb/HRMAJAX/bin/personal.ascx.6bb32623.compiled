@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/Personal.ascx" hash="2494adcdd" filehash="f45a7298b1bc5bcb" flags="110000" assembly="App_Web_y23iis42" type="ASP.usercontrols_personal_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Personal/DetailInfor.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Personal/DetailInfor.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Personal/GeneralInfo.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Personal/GeneralInfo.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/Personal.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Personal.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucMessageError.ascx.cs" />
+    </filedeps>
+</preserve>

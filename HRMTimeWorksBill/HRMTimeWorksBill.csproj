@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA2B8D69-E453-4051-95EC-48822A5E55EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRMTimeWorksBill</RootNamespace>
+    <AssemblyName>HRMTimeWorksBill</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Itworks.Idworks, Version=1.0.2797.28692, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HRMWin\bin\Debug\Itworks.Idworks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="clsINI.cs" />
+    <Compile Include="FormState.cs" />
+    <Compile Include="IProgressCallback.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeWorksReception.resx">
+      <DependentUpon>TimeWorksReception.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeWorksReception1280.resx">
+      <DependentUpon>TimeWorksReception1280.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeWorksReceptionConfig.resx">
+      <DependentUpon>TimeWorksReceptionConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SoundPlayer.cs" />
+    <Compile Include="TimeWorksReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeWorksReception.Designer.cs">
+      <DependentUpon>TimeWorksReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeWorksReception1280.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeWorksReception1280.Designer.cs">
+      <DependentUpon>TimeWorksReception1280.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeWorksReceptionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeWorksReceptionConfig.Designer.cs">
+      <DependentUpon>TimeWorksReceptionConfig.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRMBLL\HRMBLL.csproj">
+      <Project>{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}</Project>
+      <Name>HRMBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMDAL\HRMDAL.csproj">
+      <Project>{B190BD77-0BE9-4345-8106-7C2C21F737FA}</Project>
+      <Name>HRMDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMUtil\HRMUtil.csproj">
+      <Project>{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}</Project>
+      <Name>HRMUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\waitingScan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\fingerbuttonbg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\fingerbuttonbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\restoredownbuttonbg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\restoredownbuttonbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\settingbuttonbg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\settingbuttonbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\timein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\timeout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\bg_login_password.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\bg_login_username.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aqua.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannerload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\textbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\system\timewordpn_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\Images\system\shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Images\background\aqua.jpg" />
+    <Content Include="bin\Debug\Images\background\Background.png" />
+    <Content Include="bin\Debug\Images\background\Background2.png" />
+    <Content Include="bin\Debug\Images\background\bg_1.jpg" />
+    <Content Include="bin\Debug\Images\background\Flower-2-1.jpeg" />
+    <Content Include="bin\Debug\Images\background\Flower-3-1.jpeg" />
+    <Content Include="bin\Debug\Images\background\Flower-4-1.jpeg" />
+    <Content Include="bin\Debug\Images\background\nature.jpg" />
+    <Content Include="bin\Debug\Images\background\orchidacene.jpg" />
+    <Content Include="bin\Debug\Images\background\protoculture-blue_wallpaper12x10.jpg" />
+    <Content Include="bin\Debug\Images\background\Rama xiii.jpg" />
+    <Content Include="bin\Debug\Images\background\russsh1600x1024.jpg" />
+    <Content Include="bin\Debug\Images\background\solar1600x1024.jpg" />
+    <Content Include="bin\Debug\Images\background\Spiderman The Movie.jpg" />
+    <Content Include="bin\Debug\Images\background\spyque1600x1024.jpg" />
+    <Content Include="bin\Debug\Images\background\timeworkbg.png" />
+    <Content Include="bin\Debug\Images\background\vladstudio_airbus_a380_1024x768.jpg" />
+    <Content Include="bin\Debug\Images\background\wallpaper-441780.jpg" />
+    <Content Include="bin\Debug\Images\background\wallpaper_midnight_club1600.jpg" />
+    <Content Include="bin\Debug\Images\background\wp_1280_1.jpg" />
+    <Content Include="bin\Debug\Images\employees\0001.jpg" />
+    <Content Include="bin\Debug\Images\employees\0002.jpg" />
+    <Content Include="bin\Debug\Images\employees\0003.jpg" />
+    <Content Include="bin\Debug\Images\employees\0004.jpg" />
+    <Content Include="bin\Debug\Images\employees\0005.jpg" />
+    <Content Include="bin\Debug\Images\employees\0006.jpg" />
+    <Content Include="bin\Debug\Images\employees\0008.jpg" />
+    <Content Include="bin\Debug\Images\employees\0009.jpg" />
+    <Content Include="bin\Debug\Images\employees\0010.jpg" />
+    <Content Include="bin\Debug\Images\employees\0011.jpg" />
+    <Content Include="bin\Debug\Images\employees\0012.jpg" />
+    <Content Include="bin\Debug\Images\employees\0014.jpg" />
+    <Content Include="bin\Debug\Images\employees\0015.jpg" />
+    <Content Include="bin\Debug\Images\employees\0016.jpg" />
+    <Content Include="bin\Debug\Images\employees\0017.jpg" />
+    <Content Include="bin\Debug\Images\employees\0018.jpg" />
+    <Content Include="bin\Debug\Images\employees\0019.jpg" />
+    <Content Include="bin\Debug\Images\employees\0020.jpg" />
+    <Content Include="bin\Debug\Images\employees\0021.jpg" />
+    <Content Include="bin\Debug\Images\employees\0022.jpg" />
+    <Content Include="bin\Debug\Images\employees\0023.jpg" />
+    <Content Include="bin\Debug\Images\employees\0024.jpg" />
+    <Content Include="bin\Debug\Images\employees\0026.jpg" />
+    <Content Include="bin\Debug\Images\employees\0027.jpg" />
+    <Content Include="bin\Debug\Images\employees\0028.jpg" />
+    <Content Include="bin\Debug\Images\employees\0029.jpg" />
+    <Content Include="bin\Debug\Images\employees\0030.jpg" />
+    <Content Include="bin\Debug\Images\employees\0031.jpg" />
+    <Content Include="bin\Debug\Images\employees\0032.jpg" />
+    <Content Include="bin\Debug\Images\employees\0033.jpg" />
+    <Content Include="bin\Debug\Images\employees\0034.jpg" />
+    <Content Include="bin\Debug\Images\employees\0035.jpg" />
+    <Content Include="bin\Debug\Images\employees\0036.jpg" />
+    <Content Include="bin\Debug\Images\employees\0037.jpg" />
+    <Content Include="bin\Debug\Images\employees\0039.jpg" />
+    <Content Include="bin\Debug\Images\employees\0042.jpg" />
+    <Content Include="bin\Debug\Images\employees\0044.jpg" />
+    <Content Include="bin\Debug\Images\employees\0045.jpg" />
+    <Content Include="bin\Debug\Images\employees\0046.jpg" />
+    <Content Include="bin\Debug\Images\employees\0047.jpg" />
+    <Content Include="bin\Debug\Images\employees\0049.jpg" />
+    <Content Include="bin\Debug\Images\employees\0050.jpg" />
+    <Content Include="bin\Debug\Images\employees\0052.jpg" />
+    <Content Include="bin\Debug\Images\employees\0053.jpg" />
+    <Content Include="bin\Debug\Images\employees\0054.jpg" />
+    <Content Include="bin\Debug\Images\employees\0055.jpg" />
+    <Content Include="bin\Debug\Images\employees\0056.jpg" />
+    <Content Include="bin\Debug\Images\employees\0057.jpg" />
+    <Content Include="bin\Debug\Images\employees\0058.jpg" />
+    <Content Include="bin\Debug\Images\employees\0060.jpg" />
+    <Content Include="bin\Debug\Images\employees\0061.jpg" />
+    <Content Include="bin\Debug\Images\employees\0063.jpg" />
+    <Content Include="bin\Debug\Images\employees\0064.jpg" />
+    <Content Include="bin\Debug\Images\employees\0065.jpg" />
+    <Content Include="bin\Debug\Images\employees\0067.jpg" />
+    <Content Include="bin\Debug\Images\employees\0068.jpg" />
+    <Content Include="bin\Debug\Images\employees\0069.jpg" />
+    <Content Include="bin\Debug\Images\employees\0070.jpg" />
+    <Content Include="bin\Debug\Images\employees\0073.jpg" />
+    <Content Include="bin\Debug\Images\employees\0074.jpg" />
+    <Content Include="bin\Debug\Images\employees\0075.jpg" />
+    <Content Include="bin\Debug\Images\employees\0076.jpg" />
+    <Content Include="bin\Debug\Images\employees\0077.jpg" />
+    <Content Include="bin\Debug\Images\employees\0078.jpg" />
+    <Content Include="bin\Debug\Images\employees\0079.jpg" />
+    <Content Include="bin\Debug\Images\employees\0080.jpg" />
+    <Content Include="bin\Debug\Images\employees\0081.jpg" />
+    <Content Include="bin\Debug\Images\employees\0082.jpg" />
+    <Content Include="bin\Debug\Images\employees\0083.jpg" />
+    <Content Include="bin\Debug\Images\employees\0084.jpg" />
+    <Content Include="bin\Debug\Images\employees\0085.jpg" />
+    <Content Include="bin\Debug\Images\employees\0086.jpg" />
+    <Content Include="bin\Debug\Images\employees\0087.jpg" />
+    <Content Include="bin\Debug\Images\employees\0089.jpg" />
+    <Content Include="bin\Debug\Images\employees\0090.jpg" />
+    <Content Include="bin\Debug\Images\employees\0091.jpg" />
+    <Content Include="bin\Debug\Images\employees\0092.jpg" />
+    <Content Include="bin\Debug\Images\employees\0095.jpg" />
+    <Content Include="bin\Debug\Images\employees\0097.jpg" />
+    <Content Include="bin\Debug\Images\employees\0098.jpg" />
+    <Content Include="bin\Debug\Images\employees\0099.jpg" />
+    <Content Include="bin\Debug\Images\employees\0100.jpg" />
+    <Content Include="bin\Debug\Images\employees\0101.jpg" />
+    <Content Include="bin\Debug\Images\employees\0102.jpg" />
+    <Content Include="bin\Debug\Images\employees\0103.jpg" />
+    <Content Include="bin\Debug\Images\employees\0104.jpg" />
+    <Content Include="bin\Debug\Images\employees\0105.jpg" />
+    <Content Include="bin\Debug\Images\employees\0108.jpg" />
+    <Content Include="bin\Debug\Images\employees\0109.jpg" />
+    <Content Include="bin\Debug\Images\employees\0110.jpg" />
+    <Content Include="bin\Debug\Images\employees\0111.jpg" />
+    <Content Include="bin\Debug\Images\employees\0112.jpg" />
+    <Content Include="bin\Debug\Images\employees\0115.jpg" />
+    <Content Include="bin\Debug\Images\employees\0116.jpg" />
+    <Content Include="bin\Debug\Images\employees\0117.jpg" />
+    <Content Include="bin\Debug\Images\employees\0118.jpg" />
+    <Content Include="bin\Debug\Images\employees\0119.jpg" />
+    <Content Include="bin\Debug\Images\employees\0120.jpg" />
+    <Content Include="bin\Debug\Images\employees\0121.jpg" />
+    <Content Include="bin\Debug\Images\employees\0123.jpg" />
+    <Content Include="bin\Debug\Images\employees\0125.jpg" />
+    <Content Include="bin\Debug\Images\employees\0126.jpg" />
+    <Content Include="bin\Debug\Images\employees\0127.jpg" />
+    <Content Include="bin\Debug\Images\employees\0128.jpg" />
+    <Content Include="bin\Debug\Images\employees\0129.jpg" />
+    <Content Include="bin\Debug\Images\employees\0130.jpg" />
+    <Content Include="bin\Debug\Images\employees\0131.jpg" />
+    <Content Include="bin\Debug\Images\employees\0132.jpg" />
+    <Content Include="bin\Debug\Images\employees\0133.jpg" />
+    <Content Include="bin\Debug\Images\employees\0136.jpg" />
+    <Content Include="bin\Debug\Images\employees\0137.jpg" />
+    <Content Include="bin\Debug\Images\employees\0140.jpg" />
+    <Content Include="bin\Debug\Images\employees\0143.jpg" />
+    <Content Include="bin\Debug\Images\employees\0144.jpg" />
+    <Content Include="bin\Debug\Images\employees\0145.jpg" />
+    <Content Include="bin\Debug\Images\employees\0146.jpg" />
+    <Content Include="bin\Debug\Images\employees\0147.jpg" />
+    <Content Include="bin\Debug\Images\employees\0148.jpg" />
+    <Content Include="bin\Debug\Images\employees\0150.jpg" />
+    <Content Include="bin\Debug\Images\employees\0151.jpg" />
+    <Content Include="bin\Debug\Images\employees\0152.jpg" />
+    <Content Include="bin\Debug\Images\employees\0153.jpg" />
+    <Content Include="bin\Debug\Images\employees\0154.jpg" />
+    <Content Include="bin\Debug\Images\employees\0155.jpg" />
+    <Content Include="bin\Debug\Images\employees\0156.jpg" />
+    <Content Include="bin\Debug\Images\employees\0157.jpg" />
+    <Content Include="bin\Debug\Images\employees\0159.jpg" />
+    <Content Include="bin\Debug\Images\employees\0160.jpg" />
+    <Content Include="bin\Debug\Images\employees\0161.jpg" />
+    <Content Include="bin\Debug\Images\employees\0162.jpg" />
+    <Content Include="bin\Debug\Images\employees\0163.jpg" />
+    <Content Include="bin\Debug\Images\employees\0164.jpg" />
+    <Content Include="bin\Debug\Images\employees\0165.jpg" />
+    <Content Include="bin\Debug\Images\employees\0166.jpg" />
+    <Content Include="bin\Debug\Images\employees\0167.jpg" />
+    <Content Include="bin\Debug\Images\employees\0168.jpg" />
+    <Content Include="bin\Debug\Images\employees\0169.jpg" />
+    <Content Include="bin\Debug\Images\employees\0170.jpg" />
+    <Content Include="bin\Debug\Images\employees\0171.jpg" />
+    <Content Include="bin\Debug\Images\employees\0172.jpg" />
+    <Content Include="bin\Debug\Images\employees\0173.jpg" />
+    <Content Include="bin\Debug\Images\employees\0174.jpg" />
+    <Content Include="bin\Debug\Images\employees\0175.jpg" />
+    <Content Include="bin\Debug\Images\employees\0176.jpg" />
+    <Content Include="bin\Debug\Images\employees\0177.jpg" />
+    <Content Include="bin\Debug\Images\employees\0178.jpg" />
+    <Content Include="bin\Debug\Images\employees\0179.jpg" />
+    <Content Include="bin\Debug\Images\employees\0180.jpg" />
+    <Content Include="bin\Debug\Images\employees\0181.jpg" />
+    <Content Include="bin\Debug\Images\employees\0182.jpg" />
+    <Content Include="bin\Debug\Images\employees\0183.jpg" />
+    <Content Include="bin\Debug\Images\employees\0184.jpg" />
+    <Content Include="bin\Debug\Images\employees\0185.jpg" />
+    <Content Include="bin\Debug\Images\employees\0186.jpg" />
+    <Content Include="bin\Debug\Images\employees\0187.jpg" />
+    <Content Include="bin\Debug\Images\employees\0188.jpg" />
+    <Content Include="bin\Debug\Images\employees\0189.jpg" />
+    <Content Include="bin\Debug\Images\employees\0190.jpg" />
+    <Content Include="bin\Debug\Images\employees\0191.jpg" />
+    <Content Include="bin\Debug\Images\employees\0192.jpg" />
+    <Content Include="bin\Debug\Images\employees\0193.jpg" />
+    <Content Include="bin\Debug\Images\employees\0194.jpg" />
+    <Content Include="bin\Debug\Images\employees\0195.jpg" />
+    <Content Include="bin\Debug\Images\employees\0196.jpg" />
+    <Content Include="bin\Debug\Images\employees\0198.jpg" />
+    <Content Include="bin\Debug\Images\employees\0199.jpg" />
+    <Content Include="bin\Debug\Images\employees\0200.jpg" />
+    <Content Include="bin\Debug\Images\employees\0201.jpg" />
+    <Content Include="bin\Debug\Images\employees\0202.jpg" />
+    <Content Include="bin\Debug\Images\employees\0204.jpg" />
+    <Content Include="bin\Debug\Images\employees\0205.jpg" />
+    <Content Include="bin\Debug\Images\employees\0206.jpg" />
+    <Content Include="bin\Debug\Images\employees\0207.jpg" />
+    <Content Include="bin\Debug\Images\employees\0208.jpg" />
+    <Content Include="bin\Debug\Images\employees\0209.jpg" />
+    <Content Include="bin\Debug\Images\employees\0210.jpg" />
+    <Content Include="bin\Debug\Images\employees\0211.jpg" />
+    <Content Include="bin\Debug\Images\employees\0213.jpg" />
+    <Content Include="bin\Debug\Images\employees\0214.jpg" />
+    <Content Include="bin\Debug\Images\employees\0215.jpg" />
+    <Content Include="bin\Debug\Images\employees\0216.jpg" />
+    <Content Include="bin\Debug\Images\employees\0217.jpg" />
+    <Content Include="bin\Debug\Images\employees\0218.jpg" />
+    <Content Include="bin\Debug\Images\employees\0219.jpg" />
+    <Content Include="bin\Debug\Images\employees\0220.jpg" />
+    <Content Include="bin\Debug\Images\employees\0221.jpg" />
+    <Content Include="bin\Debug\Images\employees\0222.jpg" />
+    <Content Include="bin\Debug\Images\employees\0223.jpg" />
+    <Content Include="bin\Debug\Images\employees\0224.jpg" />
+    <Content Include="bin\Debug\Images\employees\0225.jpg" />
+    <Content Include="bin\Debug\Images\employees\0226.jpg" />
+    <Content Include="bin\Debug\Images\employees\0227.jpg" />
+    <Content Include="bin\Debug\Images\employees\0228.jpg" />
+    <Content Include="bin\Debug\Images\employees\0230.jpg" />
+    <Content Include="bin\Debug\Images\employees\0231.jpg" />
+    <Content Include="bin\Debug\Images\employees\0232.jpg" />
+    <Content Include="bin\Debug\Images\employees\0233.jpg" />
+    <Content Include="bin\Debug\Images\employees\0234.jpg" />
+    <Content Include="bin\Debug\Images\employees\0235.jpg" />
+    <Content Include="bin\Debug\Images\employees\0236.jpg" />
+    <Content Include="bin\Debug\Images\employees\0238.jpg" />
+    <Content Include="bin\Debug\Images\employees\0239.jpg" />
+    <Content Include="bin\Debug\Images\employees\0240.jpg" />
+    <Content Include="bin\Debug\Images\employees\0241.jpg" />
+    <Content Include="bin\Debug\Images\employees\0242.jpg" />
+    <Content Include="bin\Debug\Images\employees\0243.jpg" />
+    <Content Include="bin\Debug\Images\employees\0245.jpg" />
+    <Content Include="bin\Debug\Images\employees\0246.jpg" />
+    <Content Include="bin\Debug\Images\employees\0247.jpg" />
+    <Content Include="bin\Debug\Images\employees\0248.jpg" />
+    <Content Include="bin\Debug\Images\employees\0249.jpg" />
+    <Content Include="bin\Debug\Images\employees\0251.jpg" />
+    <Content Include="bin\Debug\Images\employees\0252.jpg" />
+    <Content Include="bin\Debug\Images\employees\0253.jpg" />
+    <Content Include="bin\Debug\Images\employees\0254.jpg" />
+    <Content Include="bin\Debug\Images\employees\0256.jpg" />
+    <Content Include="bin\Debug\Images\employees\0257.jpg" />
+    <Content Include="bin\Debug\Images\employees\0258.jpg" />
+    <Content Include="bin\Debug\Images\employees\0259.jpg" />
+    <Content Include="bin\Debug\Images\employees\0260.jpg" />
+    <Content Include="bin\Debug\Images\employees\0261.jpg" />
+    <Content Include="bin\Debug\Images\employees\0262.jpg" />
+    <Content Include="bin\Debug\Images\employees\0263.jpg" />
+    <Content Include="bin\Debug\Images\employees\0264.jpg" />
+    <Content Include="bin\Debug\Images\employees\0265.jpg" />
+    <Content Include="bin\Debug\Images\employees\0266.jpg" />
+    <Content Include="bin\Debug\Images\employees\0267.jpg" />
+    <Content Include="bin\Debug\Images\employees\0268.jpg" />
+    <Content Include="bin\Debug\Images\employees\0269.jpg" />
+    <Content Include="bin\Debug\Images\employees\0270.jpg" />
+    <Content Include="bin\Debug\Images\employees\0271.jpg" />
+    <Content Include="bin\Debug\Images\employees\0272.jpg" />
+    <Content Include="bin\Debug\Images\employees\0273.jpg" />
+    <Content Include="bin\Debug\Images\employees\0274.jpg" />
+    <Content Include="bin\Debug\Images\employees\0275.jpg" />
+    <Content Include="bin\Debug\Images\employees\0276.jpg" />
+    <Content Include="bin\Debug\Images\employees\0277.jpg" />
+    <Content Include="bin\Debug\Images\employees\0278.jpg" />
+    <Content Include="bin\Debug\Images\employees\0279.jpg" />
+    <Content Include="bin\Debug\Images\employees\0280.jpg" />
+    <Content Include="bin\Debug\Images\employees\0281.jpg" />
+    <Content Include="bin\Debug\Images\employees\0282.jpg" />
+    <Content Include="bin\Debug\Images\employees\0283.jpg" />
+    <Content Include="bin\Debug\Images\employees\0285.jpg" />
+    <Content Include="bin\Debug\Images\employees\0286.jpg" />
+    <Content Include="bin\Debug\Images\employees\0287.jpg" />
+    <Content Include="bin\Debug\Images\employees\0288.jpg" />
+    <Content Include="bin\Debug\Images\employees\0289.jpg" />
+    <Content Include="bin\Debug\Images\employees\0290.jpg" />
+    <Content Include="bin\Debug\Images\employees\0291.jpg" />
+    <Content Include="bin\Debug\Images\employees\0292.jpg" />
+    <Content Include="bin\Debug\Images\employees\0293.jpg" />
+    <Content Include="bin\Debug\Images\employees\0294.jpg" />
+    <Content Include="bin\Debug\Images\employees\0295.jpg" />
+    <Content Include="bin\Debug\Images\employees\0296.jpg" />
+    <Content Include="bin\Debug\Images\employees\0297.jpg" />
+    <Content Include="bin\Debug\Images\employees\0298.jpg" />
+    <Content Include="bin\Debug\Images\employees\0299.jpg" />
+    <Content Include="bin\Debug\Images\employees\0300.jpg" />
+    <Content Include="bin\Debug\Images\employees\0301.jpg" />
+    <Content Include="bin\Debug\Images\employees\0302.jpg" />
+    <Content Include="bin\Debug\Images\employees\0303.jpg" />
+    <Content Include="bin\Debug\Images\employees\0304.jpg" />
+    <Content Include="bin\Debug\Images\employees\0305.jpg" />
+    <Content Include="bin\Debug\Images\employees\0306.jpg" />
+    <Content Include="bin\Debug\Images\employees\0307.jpg" />
+    <Content Include="bin\Debug\Images\employees\0308.jpg" />
+    <Content Include="bin\Debug\Images\employees\0309.jpg" />
+    <Content Include="bin\Debug\Images\employees\0310.jpg" />
+    <Content Include="bin\Debug\Images\employees\0311.jpg" />
+    <Content Include="bin\Debug\Images\employees\0312.jpg" />
+    <Content Include="bin\Debug\Images\employees\0313.jpg" />
+    <Content Include="bin\Debug\Images\employees\0314.jpg" />
+    <Content Include="bin\Debug\Images\employees\0316.jpg" />
+    <Content Include="bin\Debug\Images\employees\0317.jpg" />
+    <Content Include="bin\Debug\Images\employees\0318.jpg" />
+    <Content Include="bin\Debug\Images\employees\0319.jpg" />
+    <Content Include="bin\Debug\Images\employees\0320.jpg" />
+    <Content Include="bin\Debug\Images\employees\0321.jpg" />
+    <Content Include="bin\Debug\Images\employees\0322.jpg" />
+    <Content Include="bin\Debug\Images\employees\0323.jpg" />
+    <Content Include="bin\Debug\Images\employees\0324.jpg" />
+    <Content Include="bin\Debug\Images\employees\0325.jpg" />
+    <Content Include="bin\Debug\Images\employees\0326.jpg" />
+    <Content Include="bin\Debug\Images\employees\0327.jpg" />
+    <Content Include="bin\Debug\Images\employees\0328.jpg" />
+    <Content Include="bin\Debug\Images\employees\0329.jpg" />
+    <Content Include="bin\Debug\Images\employees\0330.jpg" />
+    <Content Include="bin\Debug\Images\employees\0331.jpg" />
+    <Content Include="bin\Debug\Images\employees\0332.jpg" />
+    <Content Include="bin\Debug\Images\employees\0333.jpg" />
+    <Content Include="bin\Debug\Images\employees\0334.jpg" />
+    <Content Include="bin\Debug\Images\employees\0335.jpg" />
+    <Content Include="bin\Debug\Images\employees\0336.jpg" />
+    <Content Include="bin\Debug\Images\employees\0337.jpg" />
+    <Content Include="bin\Debug\Images\employees\0338.jpg" />
+    <Content Include="bin\Debug\Images\employees\0339.jpg" />
+    <Content Include="bin\Debug\Images\employees\0340.jpg" />
+    <Content Include="bin\Debug\Images\employees\0341.jpg" />
+    <Content Include="bin\Debug\Images\employees\0342.jpg" />
+    <Content Include="bin\Debug\Images\employees\0343.jpg" />
+    <Content Include="bin\Debug\Images\employees\0344.jpg" />
+    <Content Include="bin\Debug\Images\employees\0345.jpg" />
+    <Content Include="bin\Debug\Images\employees\0346.jpg" />
+    <Content Include="bin\Debug\Images\employees\0347.jpg" />
+    <Content Include="bin\Debug\Images\employees\0348.jpg" />
+    <Content Include="bin\Debug\Images\employees\0349.jpg" />
+    <Content Include="bin\Debug\Images\employees\0351.jpg" />
+    <Content Include="bin\Debug\Images\employees\0352.jpg" />
+    <Content Include="bin\Debug\Images\employees\0353.jpg" />
+    <Content Include="bin\Debug\Images\employees\0356.jpg" />
+    <Content Include="bin\Debug\Images\employees\0357.jpg" />
+    <Content Include="bin\Debug\Images\employees\0358.jpg" />
+    <Content Include="bin\Debug\Images\employees\0359.jpg" />
+    <Content Include="bin\Debug\Images\employees\0361.jpg" />
+    <Content Include="bin\Debug\Images\employees\0362.jpg" />
+    <Content Include="bin\Debug\Images\employees\0363.jpg" />
+    <Content Include="bin\Debug\Images\employees\0364.jpg" />
+    <Content Include="bin\Debug\Images\employees\0366.jpg" />
+    <Content Include="bin\Debug\Images\employees\0367.jpg" />
+    <Content Include="bin\Debug\Images\employees\0368.jpg" />
+    <Content Include="bin\Debug\Images\employees\0369.jpg" />
+    <Content Include="bin\Debug\Images\employees\0370.jpg" />
+    <Content Include="bin\Debug\Images\employees\0371.jpg" />
+    <Content Include="bin\Debug\Images\employees\0372.jpg" />
+    <Content Include="bin\Debug\Images\employees\0373.jpg" />
+    <Content Include="bin\Debug\Images\employees\0374.jpg" />
+    <Content Include="bin\Debug\Images\employees\0375.jpg" />
+    <Content Include="bin\Debug\Images\employees\0376.jpg" />
+    <Content Include="bin\Debug\Images\employees\0377.jpg" />
+    <Content Include="bin\Debug\Images\employees\0378.jpg" />
+    <Content Include="bin\Debug\Images\employees\0379.jpg" />
+    <Content Include="bin\Debug\Images\employees\0380.jpg" />
+    <Content Include="bin\Debug\Images\employees\0381.jpg" />
+    <Content Include="bin\Debug\Images\employees\0382.jpg" />
+    <Content Include="bin\Debug\Images\employees\0383.jpg" />
+    <Content Include="bin\Debug\Images\employees\0384.jpg" />
+    <Content Include="bin\Debug\Images\employees\0385.jpg" />
+    <Content Include="bin\Debug\Images\employees\0386.jpg" />
+    <Content Include="bin\Debug\Images\employees\0390.jpg" />
+    <Content Include="bin\Debug\Images\employees\0391.jpg" />
+    <Content Include="bin\Debug\Images\employees\0393.jpg" />
+    <Content Include="bin\Debug\Images\employees\0395.jpg" />
+    <Content Include="bin\Debug\Images\employees\0396.jpg" />
+    <Content Include="bin\Debug\Images\employees\0397.jpg" />
+    <Content Include="bin\Debug\Images\employees\0399.jpg" />
+    <Content Include="bin\Debug\Images\employees\0401.jpg" />
+    <Content Include="bin\Debug\Images\employees\0402.jpg" />
+    <Content Include="bin\Debug\Images\employees\0403.jpg" />
+    <Content Include="bin\Debug\Images\employees\0404.jpg" />
+    <Content Include="bin\Debug\Images\employees\0406.jpg" />
+    <Content Include="bin\Debug\Images\employees\0407.jpg" />
+    <Content Include="bin\Debug\Images\employees\0408.jpg" />
+    <Content Include="bin\Debug\Images\employees\0409.jpg" />
+    <Content Include="bin\Debug\Images\employees\0410.jpg" />
+    <Content Include="bin\Debug\Images\employees\0411.jpg" />
+    <Content Include="bin\Debug\Images\employees\0412.jpg" />
+    <Content Include="bin\Debug\Images\employees\0413.jpg" />
+    <Content Include="bin\Debug\Images\employees\0414.jpg" />
+    <Content Include="bin\Debug\Images\employees\0415.jpg" />
+    <Content Include="bin\Debug\Images\employees\0416.jpg" />
+    <Content Include="bin\Debug\Images\employees\0417.jpg" />
+    <Content Include="bin\Debug\Images\employees\0418.jpg" />
+    <Content Include="bin\Debug\Images\employees\0420.jpg" />
+    <Content Include="bin\Debug\Images\employees\0421.jpg" />
+    <Content Include="bin\Debug\Images\employees\0422.jpg" />
+    <Content Include="bin\Debug\Images\employees\0423.jpg" />
+    <Content Include="bin\Debug\Images\employees\0424.jpg" />
+    <Content Include="bin\Debug\Images\employees\0425.jpg" />
+    <Content Include="bin\Debug\Images\employees\0426.jpg" />
+    <Content Include="bin\Debug\Images\employees\0427.jpg" />
+    <Content Include="bin\Debug\Images\employees\0428.jpg" />
+    <Content Include="bin\Debug\Images\employees\0429.jpg" />
+    <Content Include="bin\Debug\Images\employees\0430.jpg" />
+    <Content Include="bin\Debug\Images\employees\0431.jpg" />
+    <Content Include="bin\Debug\Images\employees\0432.jpg" />
+    <Content Include="bin\Debug\Images\employees\0433.jpg" />
+    <Content Include="bin\Debug\Images\employees\0434.jpg" />
+    <Content Include="bin\Debug\Images\employees\0435.jpg" />
+    <Content Include="bin\Debug\Images\employees\0436.jpg" />
+    <Content Include="bin\Debug\Images\employees\0437.jpg" />
+    <Content Include="bin\Debug\Images\employees\0438.jpg" />
+    <Content Include="bin\Debug\Images\employees\0439.jpg" />
+    <Content Include="bin\Debug\Images\employees\0440.jpg" />
+    <Content Include="bin\Debug\Images\employees\0441.jpg" />
+    <Content Include="bin\Debug\Images\employees\0442.jpg" />
+    <Content Include="bin\Debug\Images\employees\0443.jpg" />
+    <Content Include="bin\Debug\Images\employees\0444.jpg" />
+    <Content Include="bin\Debug\Images\employees\0445.jpg" />
+    <Content Include="bin\Debug\Images\employees\0446.jpg" />
+    <Content Include="bin\Debug\Images\employees\0447.jpg" />
+    <Content Include="bin\Debug\Images\employees\0448.jpg" />
+    <Content Include="bin\Debug\Images\employees\0449.jpg" />
+    <Content Include="bin\Debug\Images\employees\0450.jpg" />
+    <Content Include="bin\Debug\Images\employees\0451.jpg" />
+    <Content Include="bin\Debug\Images\employees\0452.jpg" />
+    <Content Include="bin\Debug\Images\employees\0453.jpg" />
+    <Content Include="bin\Debug\Images\employees\0454.jpg" />
+    <Content Include="bin\Debug\Images\employees\0455.jpg" />
+    <Content Include="bin\Debug\Images\employees\0456.jpg" />
+    <Content Include="bin\Debug\Images\employees\0457.jpg" />
+    <Content Include="bin\Debug\Images\employees\0458.jpg" />
+    <Content Include="bin\Debug\Images\employees\0459.jpg" />
+    <Content Include="bin\Debug\Images\employees\0460.jpg" />
+    <Content Include="bin\Debug\Images\employees\0462.jpg" />
+    <Content Include="bin\Debug\Images\employees\0463.jpg" />
+    <Content Include="bin\Debug\Images\employees\0464.jpg" />
+    <Content Include="bin\Debug\Images\employees\0465.jpg" />
+    <Content Include="bin\Debug\Images\employees\0466.jpg" />
+    <Content Include="bin\Debug\Images\employees\0467.jpg" />
+    <Content Include="bin\Debug\Images\employees\0468.jpg" />
+    <Content Include="bin\Debug\Images\employees\0469.jpg" />
+    <Content Include="bin\Debug\Images\employees\0470.jpg" />
+    <Content Include="bin\Debug\Images\employees\0473.jpg" />
+    <Content Include="bin\Debug\Images\employees\0474.jpg" />
+    <Content Include="bin\Debug\Images\employees\0475.jpg" />
+    <Content Include="bin\Debug\Images\employees\0476.jpg" />
+    <Content Include="bin\Debug\Images\employees\0477.jpg" />
+    <Content Include="bin\Debug\Images\employees\0478.jpg" />
+    <Content Include="bin\Debug\Images\employees\0479.jpg" />
+    <Content Include="bin\Debug\Images\employees\0480.jpg" />
+    <Content Include="bin\Debug\Images\employees\0481.jpg" />
+    <Content Include="bin\Debug\Images\employees\0482.jpg" />
+    <Content Include="bin\Debug\Images\employees\0483.jpg" />
+    <Content Include="bin\Debug\Images\employees\0484.jpg" />
+    <Content Include="bin\Debug\Images\employees\0485.jpg" />
+    <Content Include="bin\Debug\Images\employees\0486.jpg" />
+    <Content Include="bin\Debug\Images\employees\0487.jpg" />
+    <Content Include="bin\Debug\Images\employees\0488.jpg" />
+    <Content Include="bin\Debug\Images\employees\0489.jpg" />
+    <Content Include="bin\Debug\Images\employees\0490.jpg" />
+    <Content Include="bin\Debug\Images\employees\0491.jpg" />
+    <Content Include="bin\Debug\Images\employees\0492.jpg" />
+    <Content Include="bin\Debug\Images\employees\0493.jpg" />
+    <Content Include="bin\Debug\Images\employees\0494.jpg" />
+    <Content Include="bin\Debug\Images\employees\0495.jpg" />
+    <Content Include="bin\Debug\Images\employees\0496.jpg" />
+    <Content Include="bin\Debug\Images\employees\0498.jpg" />
+    <Content Include="bin\Debug\Images\employees\0499.jpg" />
+    <Content Include="bin\Debug\Images\employees\0500.jpg" />
+    <Content Include="bin\Debug\Images\employees\0501.jpg" />
+    <Content Include="bin\Debug\Images\employees\0502.jpg" />
+    <Content Include="bin\Debug\Images\employees\0503.jpg" />
+    <Content Include="bin\Debug\Images\employees\0504.jpg" />
+    <Content Include="bin\Debug\Images\employees\0505.jpg" />
+    <Content Include="bin\Debug\Images\employees\0506.jpg" />
+    <Content Include="bin\Debug\Images\employees\0507.jpg" />
+    <Content Include="bin\Debug\Images\employees\0508.jpg" />
+    <Content Include="bin\Debug\Images\employees\0509.jpg" />
+    <Content Include="bin\Debug\Images\employees\0510.jpg" />
+    <Content Include="bin\Debug\Images\employees\0511.jpg" />
+    <Content Include="bin\Debug\Images\employees\0512.jpg" />
+    <Content Include="bin\Debug\Images\employees\0513.jpg" />
+    <Content Include="bin\Debug\Images\employees\0514.jpg" />
+    <Content Include="bin\Debug\Images\employees\0515.jpg" />
+    <Content Include="bin\Debug\Images\employees\0516.jpg" />
+    <Content Include="bin\Debug\Images\employees\0517.jpg" />
+    <Content Include="bin\Debug\Images\employees\0518.jpg" />
+    <Content Include="bin\Debug\Images\employees\0519.jpg" />
+    <Content Include="bin\Debug\Images\employees\0520.jpg" />
+    <Content Include="bin\Debug\Images\employees\0521.jpg" />
+    <Content Include="bin\Debug\Images\employees\0522.jpg" />
+    <Content Include="bin\Debug\Images\employees\0523.jpg" />
+    <Content Include="bin\Debug\Images\employees\0525.jpg" />
+    <Content Include="bin\Debug\Images\employees\0526.jpg" />
+    <Content Include="bin\Debug\Images\employees\0527.jpg" />
+    <Content Include="bin\Debug\Images\employees\0528.jpg" />
+    <Content Include="bin\Debug\Images\employees\0531.jpg" />
+    <Content Include="bin\Debug\Images\employees\0532.jpg" />
+    <Content Include="bin\Debug\Images\employees\0533.jpg" />
+    <Content Include="bin\Debug\Images\employees\0534.jpg" />
+    <Content Include="bin\Debug\Images\employees\0535.jpg" />
+    <Content Include="bin\Debug\Images\employees\0537.jpg" />
+    <Content Include="bin\Debug\Images\employees\0538.jpg" />
+    <Content Include="bin\Debug\Images\employees\0541.jpg" />
+    <Content Include="bin\Debug\Images\employees\0542.jpg" />
+    <Content Include="bin\Debug\Images\employees\0544.jpg" />
+    <Content Include="bin\Debug\Images\employees\0545.jpg" />
+    <Content Include="bin\Debug\Images\employees\0546.jpg" />
+    <Content Include="bin\Debug\Images\employees\0547.jpg" />
+    <Content Include="bin\Debug\Images\employees\0548.jpg" />
+    <Content Include="bin\Debug\Images\employees\0550.jpg" />
+    <Content Include="bin\Debug\Images\employees\0551.jpg" />
+    <Content Include="bin\Debug\Images\employees\0552.jpg" />
+    <Content Include="bin\Debug\Images\employees\0553.jpg" />
+    <Content Include="bin\Debug\Images\employees\0555.jpg" />
+    <Content Include="bin\Debug\Images\employees\0556.jpg" />
+    <Content Include="bin\Debug\Images\employees\0557.jpg" />
+    <Content Include="bin\Debug\Images\employees\0558.jpg" />
+    <Content Include="bin\Debug\Images\employees\0559.jpg" />
+    <Content Include="bin\Debug\Images\employees\0560.jpg" />
+    <Content Include="bin\Debug\Images\employees\0561.jpg" />
+    <Content Include="bin\Debug\Images\employees\0562.jpg" />
+    <Content Include="bin\Debug\Images\employees\0563.jpg" />
+    <Content Include="bin\Debug\Images\employees\0564.jpg" />
+    <Content Include="bin\Debug\Images\employees\0565.jpg" />
+    <Content Include="bin\Debug\Images\employees\0566.jpg" />
+    <Content Include="bin\Debug\Images\employees\0567.jpg" />
+    <Content Include="bin\Debug\Images\employees\0568.jpg" />
+    <Content Include="bin\Debug\Images\employees\0569.jpg" />
+    <Content Include="bin\Debug\Images\employees\0570.jpg" />
+    <Content Include="bin\Debug\Images\employees\0571.jpg" />
+    <Content Include="bin\Debug\Images\employees\0572.jpg" />
+    <Content Include="bin\Debug\Images\employees\0573.jpg" />
+    <Content Include="bin\Debug\Images\employees\0574.jpg" />
+    <Content Include="bin\Debug\Images\employees\0576.jpg" />
+    <Content Include="bin\Debug\Images\employees\0580.jpg" />
+    <Content Include="bin\Debug\Images\employees\0581.jpg" />
+    <Content Include="bin\Debug\Images\employees\0582.jpg" />
+    <Content Include="bin\Debug\Images\employees\0583.jpg" />
+    <Content Include="bin\Debug\Images\employees\0584.jpg" />
+    <Content Include="bin\Debug\Images\employees\0585.jpg" />
+    <Content Include="bin\Debug\Images\employees\0586.jpg" />
+    <Content Include="bin\Debug\Images\employees\0587.jpg" />
+    <Content Include="bin\Debug\Images\employees\0588.jpg" />
+    <Content Include="bin\Debug\Images\employees\0589.jpg" />
+    <Content Include="bin\Debug\Images\employees\0590.jpg" />
+    <Content Include="bin\Debug\Images\employees\0591.jpg" />
+    <Content Include="bin\Debug\Images\employees\0592.jpg" />
+    <Content Include="bin\Debug\Images\employees\0593.jpg" />
+    <Content Include="bin\Debug\Images\employees\0594.jpg" />
+    <Content Include="bin\Debug\Images\employees\0597.jpg" />
+    <Content Include="bin\Debug\Images\employees\0598.jpg" />
+    <Content Include="bin\Debug\Images\employees\0600.jpg" />
+    <Content Include="bin\Debug\Images\employees\0601.jpg" />
+    <Content Include="bin\Debug\Images\employees\0602.jpg" />
+    <Content Include="bin\Debug\Images\employees\0603.jpg" />
+    <Content Include="bin\Debug\Images\employees\0604.jpg" />
+    <Content Include="bin\Debug\Images\employees\0605.jpg" />
+    <Content Include="bin\Debug\Images\employees\0609.jpg" />
+    <Content Include="bin\Debug\Images\employees\0610.jpg" />
+    <Content Include="bin\Debug\Images\employees\0612.jpg" />
+    <Content Include="bin\Debug\Images\employees\0619.jpg" />
+    <Content Include="bin\Debug\Images\employees\0620.jpg" />
+    <Content Include="bin\Debug\Images\employees\0622.jpg" />
+    <Content Include="bin\Debug\Images\employees\0623.jpg" />
+    <Content Include="bin\Debug\Images\employees\0624.jpg" />
+    <Content Include="bin\Debug\Images\employees\0625.jpg" />
+    <Content Include="bin\Debug\Images\employees\0626.jpg" />
+    <Content Include="bin\Debug\Images\employees\0627.jpg" />
+    <Content Include="bin\Debug\Images\employees\0628.jpg" />
+    <Content Include="bin\Debug\Images\employees\0629.jpg" />
+    <Content Include="bin\Debug\Images\employees\0630.jpg" />
+    <Content Include="bin\Debug\Images\employees\0631.jpg" />
+    <Content Include="bin\Debug\Images\employees\0632.jpg" />
+    <Content Include="bin\Debug\Images\employees\0633.jpg" />
+    <Content Include="bin\Debug\Images\employees\0634.jpg" />
+    <Content Include="bin\Debug\Images\employees\0653.jpg" />
+    <Content Include="bin\Debug\Images\employees\0654.jpg" />
+    <Content Include="bin\Debug\Images\employees\0655.jpg" />
+    <Content Include="bin\Debug\Images\employees\0656.jpg" />
+    <Content Include="bin\Debug\Images\employees\0657.jpg" />
+    <Content Include="bin\Debug\Images\employees\0658.jpg" />
+    <Content Include="bin\Debug\Images\employees\0659.jpg" />
+    <Content Include="bin\Debug\Images\employees\0660.jpg" />
+    <Content Include="bin\Debug\Images\employees\0661.jpg" />
+    <Content Include="bin\Debug\Images\employees\0662.jpg" />
+    <Content Include="bin\Debug\Images\employees\0664.jpg" />
+    <Content Include="bin\Debug\Images\employees\0665.jpg" />
+    <Content Include="bin\Debug\Images\employees\0666.jpg" />
+    <Content Include="bin\Debug\Images\employees\0667.jpg" />
+    <Content Include="bin\Debug\Images\employees\0668.jpg" />
+    <Content Include="bin\Debug\Images\employees\0669.jpg" />
+    <Content Include="bin\Debug\Images\employees\0670.jpg" />
+    <Content Include="bin\Debug\Images\employees\0671.jpg" />
+    <Content Include="bin\Debug\Images\employees\0672.jpg" />
+    <Content Include="bin\Debug\Images\employees\0673.jpg" />
+    <Content Include="bin\Debug\Images\employees\0674.jpg" />
+    <Content Include="bin\Debug\Images\employees\0675.jpg" />
+    <Content Include="bin\Debug\Images\employees\0676.jpg" />
+    <Content Include="bin\Debug\Images\employees\0677.jpg" />
+    <Content Include="bin\Debug\Images\employees\0678.jpg" />
+    <Content Include="bin\Debug\Images\employees\0679.jpg" />
+    <Content Include="bin\Debug\Images\employees\0680.jpg" />
+    <Content Include="bin\Debug\Images\employees\0681.jpg" />
+    <Content Include="bin\Debug\Images\employees\0683.jpg" />
+    <Content Include="bin\Debug\Images\employees\0684.jpg" />
+    <Content Include="bin\Debug\Images\employees\0685.jpg" />
+    <Content Include="bin\Debug\Images\employees\0686.jpg" />
+    <Content Include="bin\Debug\Images\employees\0687.jpg" />
+    <Content Include="bin\Debug\Images\employees\0688.jpg" />
+    <Content Include="bin\Debug\Images\employees\0689.jpg" />
+    <Content Include="bin\Debug\Images\employees\0690.jpg" />
+    <Content Include="bin\Debug\Images\employees\0692.jpg" />
+    <Content Include="bin\Debug\Images\employees\0693.jpg" />
+    <Content Include="bin\Debug\Images\employees\0694.jpg" />
+    <Content Include="bin\Debug\Images\employees\0695.jpg" />
+    <Content Include="bin\Debug\Images\employees\0696.jpg" />
+    <Content Include="bin\Debug\Images\employees\0697.jpg" />
+    <Content Include="bin\Debug\Images\employees\0698.jpg" />
+    <Content Include="bin\Debug\Images\employees\0699.jpg" />
+    <Content Include="bin\Debug\Images\employees\0700.jpg" />
+    <Content Include="bin\Debug\Images\employees\0701.jpg" />
+    <Content Include="bin\Debug\Images\employees\0702.jpg" />
+    <Content Include="bin\Debug\Images\employees\0703.jpg" />
+    <Content Include="bin\Debug\Images\employees\0704.jpg" />
+    <Content Include="bin\Debug\Images\employees\0705.jpg" />
+    <Content Include="bin\Debug\Images\employees\0706.jpg" />
+    <Content Include="bin\Debug\Images\employees\0707.jpg" />
+    <Content Include="bin\Debug\Images\employees\0708.jpg" />
+    <Content Include="bin\Debug\Images\employees\0710.jpg" />
+    <Content Include="bin\Debug\Images\employees\0711.jpg" />
+    <Content Include="bin\Debug\Images\employees\0712.jpg" />
+    <Content Include="bin\Debug\Images\employees\0713.jpg" />
+    <Content Include="bin\Debug\Images\employees\0714.jpg" />
+    <Content Include="bin\Debug\Images\employees\0715.jpg" />
+    <Content Include="bin\Debug\Images\employees\0716.jpg" />
+    <Content Include="bin\Debug\Images\employees\0717.jpg" />
+    <Content Include="bin\Debug\Images\employees\0718.jpg" />
+    <Content Include="bin\Debug\Images\employees\0719.jpg" />
+    <Content Include="bin\Debug\Images\employees\0720.jpg" />
+    <Content Include="bin\Debug\Images\employees\0721.jpg" />
+    <Content Include="bin\Debug\Images\employees\0722.jpg" />
+    <Content Include="bin\Debug\Images\employees\0723.jpg" />
+    <Content Include="bin\Debug\Images\employees\0724.jpg" />
+    <Content Include="bin\Debug\Images\employees\0725.jpg" />
+    <Content Include="bin\Debug\Images\employees\0727.jpg" />
+    <Content Include="bin\Debug\Images\employees\0728.jpg" />
+    <Content Include="bin\Debug\Images\employees\0729.jpg" />
+    <Content Include="bin\Debug\Images\employees\0730.jpg" />
+    <Content Include="bin\Debug\Images\employees\0731.jpg" />
+    <Content Include="bin\Debug\Images\employees\0733.jpg" />
+    <Content Include="bin\Debug\Images\employees\0734.jpg" />
+    <Content Include="bin\Debug\Images\employees\0735.jpg" />
+    <Content Include="bin\Debug\Images\employees\0736.jpg" />
+    <Content Include="bin\Debug\Images\employees\0737.jpg" />
+    <Content Include="bin\Debug\Images\employees\0739.jpg" />
+    <Content Include="bin\Debug\Images\employees\0740.jpg" />
+    <Content Include="bin\Debug\Images\employees\0741.jpg" />
+    <Content Include="bin\Debug\Images\employees\0742.jpg" />
+    <Content Include="bin\Debug\Images\employees\0743.jpg" />
+    <Content Include="bin\Debug\Images\employees\0745.jpg" />
+    <Content Include="bin\Debug\Images\employees\0747.jpg" />
+    <Content Include="bin\Debug\Images\employees\0748.jpg" />
+    <Content Include="bin\Debug\Images\employees\0750.jpg" />
+    <Content Include="bin\Debug\Images\employees\0751.jpg" />
+    <Content Include="bin\Debug\Images\employees\0752.jpg" />
+    <Content Include="bin\Debug\Images\employees\0753.jpg" />
+    <Content Include="bin\Debug\Images\employees\0754.jpg" />
+    <Content Include="bin\Debug\Images\employees\0755.jpg" />
+    <Content Include="bin\Debug\Images\employees\0756.jpg" />
+    <Content Include="bin\Debug\Images\employees\0757.jpg" />
+    <Content Include="bin\Debug\Images\employees\0758.jpg" />
+    <Content Include="bin\Debug\Images\employees\0759.jpg" />
+    <Content Include="bin\Debug\Images\employees\0760.jpg" />
+    <Content Include="bin\Debug\Images\employees\0761.jpg" />
+    <Content Include="bin\Debug\Images\employees\0762.jpg" />
+    <Content Include="bin\Debug\Images\employees\0763.jpg" />
+    <Content Include="bin\Debug\Images\employees\0764.jpg" />
+    <Content Include="bin\Debug\Images\employees\0765.jpg" />
+    <Content Include="bin\Debug\Images\employees\0767.jpg" />
+    <Content Include="bin\Debug\Images\employees\0768.jpg" />
+    <Content Include="bin\Debug\Images\employees\0769.jpg" />
+    <Content Include="bin\Debug\Images\employees\0772.jpg" />
+    <Content Include="bin\Debug\Images\employees\0773.jpg" />
+    <Content Include="bin\Debug\Images\employees\0774.jpg" />
+    <Content Include="bin\Debug\Images\employees\0788.jpg" />
+    <Content Include="bin\Debug\Images\employees\0791.jpg" />
+    <Content Include="bin\Debug\Images\employees\0792.jpg" />
+    <Content Include="bin\Debug\Images\employees\0794.jpg" />
+    <Content Include="bin\Debug\Images\employees\0795.jpg" />
+    <Content Include="bin\Debug\Images\employees\0798.jpg" />
+    <Content Include="bin\Debug\Images\employees\0799.jpg" />
+    <Content Include="bin\Debug\Images\employees\0800.jpg" />
+    <Content Include="bin\Debug\Images\employees\0801.jpg" />
+    <Content Include="bin\Debug\Images\employees\0802.jpg" />
+    <Content Include="bin\Debug\Images\employees\0803.jpg" />
+    <Content Include="bin\Debug\Images\employees\0804.jpg" />
+    <Content Include="bin\Debug\Images\employees\0805.jpg" />
+    <Content Include="bin\Debug\Images\employees\0806.jpg" />
+    <Content Include="bin\Debug\Images\employees\0807.jpg" />
+    <Content Include="bin\Debug\Images\employees\0810.jpg" />
+    <Content Include="bin\Debug\Images\employees\0811.jpg" />
+    <Content Include="bin\Debug\Images\employees\0812.jpg" />
+    <Content Include="bin\Debug\Images\employees\0813.jpg" />
+    <Content Include="bin\Debug\Images\employees\0815.jpg" />
+    <Content Include="bin\Debug\Images\employees\0816.jpg" />
+    <Content Include="bin\Debug\Images\employees\0817.jpg" />
+    <Content Include="bin\Debug\Images\employees\0819.jpg" />
+    <Content Include="bin\Debug\Images\employees\0820.jpg" />
+    <Content Include="bin\Debug\Images\employees\0821.jpg" />
+    <Content Include="bin\Debug\Images\employees\0822.jpg" />
+    <Content Include="bin\Debug\Images\employees\0825.jpg" />
+    <Content Include="bin\Debug\Images\employees\0826.jpg" />
+    <Content Include="bin\Debug\Images\employees\0827.jpg" />
+    <Content Include="bin\Debug\Images\employees\0828.jpg" />
+    <Content Include="bin\Debug\Images\employees\0829.jpg" />
+    <Content Include="bin\Debug\Images\employees\0830.jpg" />
+    <Content Include="bin\Debug\Images\employees\0831.jpg" />
+    <Content Include="bin\Debug\Images\employees\0832.jpg" />
+    <Content Include="bin\Debug\Images\employees\0833.jpg" />
+    <Content Include="bin\Debug\Images\employees\0834.jpg" />
+    <Content Include="bin\Debug\Images\employees\0835.jpg" />
+    <Content Include="bin\Debug\Images\employees\0836.jpg" />
+    <Content Include="bin\Debug\Images\employees\0841.jpg" />
+    <Content Include="bin\Debug\Images\employees\0842.jpg" />
+    <Content Include="bin\Debug\Images\employees\0843.jpg" />
+    <Content Include="bin\Debug\Images\employees\0844.jpg" />
+    <Content Include="bin\Debug\Images\employees\0845.jpg" />
+    <Content Include="bin\Debug\Images\employees\0846.jpg" />
+    <Content Include="bin\Debug\Images\employees\0847.jpg" />
+    <Content Include="bin\Debug\Images\employees\0850.jpg" />
+    <Content Include="bin\Debug\Images\employees\0851.jpg" />
+    <Content Include="bin\Debug\Images\employees\0852.jpg" />
+    <Content Include="bin\Debug\Images\employees\0853.jpg" />
+    <Content Include="bin\Debug\Images\employees\0855.jpg" />
+    <Content Include="bin\Debug\Images\employees\0856.jpg" />
+    <Content Include="bin\Debug\Images\employees\0857.jpg" />
+    <Content Include="bin\Debug\Images\employees\0858.jpg" />
+    <Content Include="bin\Debug\Images\employees\0859.jpg" />
+    <Content Include="bin\Debug\Images\employees\0860.jpg" />
+    <Content Include="bin\Debug\Images\employees\0862.jpg" />
+    <Content Include="bin\Debug\Images\employees\0863.jpg" />
+    <Content Include="bin\Debug\Images\employees\0874.jpg" />
+    <Content Include="bin\Debug\Images\employees\0875.jpg" />
+    <Content Include="bin\Debug\Images\employees\0876.jpg" />
+    <Content Include="bin\Debug\Images\employees\4207.jpg" />
+    <Content Include="bin\Debug\Images\employees\4699.jpg" />
+    <Content Include="bin\Debug\Images\employees\4704.jpg" />
+    <Content Include="bin\Debug\Images\employees\4706.jpg" />
+    <Content Include="bin\Debug\Images\employees\4707.jpg" />
+    <Content Include="bin\Debug\Images\employees\4708.jpg" />
+    <Content Include="bin\Debug\Images\employees\no_image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

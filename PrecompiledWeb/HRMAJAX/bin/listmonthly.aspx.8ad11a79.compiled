@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Income/ListMonthly.aspx" hash="2494adcdd" filehash="8d29e25e3998d7c8" flags="110000" assembly="App_Web_y5epxxfw" type="ASP.income_listmonthly_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/Income/ListMonthly.aspx" />
+        <filedep name="/HRMAJAX/Income/ListMonthly.aspx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DateDepartmentFilter.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DateDepartmentFilter.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

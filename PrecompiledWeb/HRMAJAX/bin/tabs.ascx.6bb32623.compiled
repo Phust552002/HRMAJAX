@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/Tabs.ascx" hash="2494adcdd" filehash="4db74c1dd7c88890" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_tabs_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/Tabs.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Tabs.ascx.cs" />
+    </filedeps>
+</preserve>

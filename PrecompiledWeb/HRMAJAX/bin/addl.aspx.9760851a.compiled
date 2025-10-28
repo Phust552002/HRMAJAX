@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Workdays/AddL.aspx" hash="2494adcdd" filehash="6fb99c15f8669b0e" flags="110000" assembly="App_Web_02sdac21" type="ASP.workdays_addl_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/Leave/UserControls/AddLeaves.ascx" />
+        <filedep name="/HRMAJAX/Leave/UserControls/AddLeaves.ascx.cs" />
+        <filedep name="/HRMAJAX/Leave/UserControls/ListLeaves.ascx" />
+        <filedep name="/HRMAJAX/Leave/UserControls/ListLeaves.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucDateFilter.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucDateFilter.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+        <filedep name="/HRMAJAX/Workdays/AddL.aspx" />
+        <filedep name="/HRMAJAX/Workdays/AddL.aspx.cs" />
+    </filedeps>
+</preserve>

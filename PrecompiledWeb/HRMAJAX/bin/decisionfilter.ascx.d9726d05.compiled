@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Decisions/UserControls/DecisionFilter.ascx" hash="2494adcdd" filehash="7c696b7a8e491367" flags="110000" assembly="App_Web_pv5e5gje" type="ASP.decisions_usercontrols_decisionfilter_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Decisions/UserControls/DecisionFilter.ascx" />
+        <filedep name="/HRMAJAX/Decisions/UserControls/DecisionFilter.ascx.cs" />
+    </filedeps>
+</preserve>

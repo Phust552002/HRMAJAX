@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/DAGS/DAD_LINK.aspx" hash="2494adcdd" filehash="890a5a8b3f968584" flags="110000" assembly="App_Web_hiaieap0" type="ASP.dags_dad_link_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/DAGS/DAD_LINK.aspx" />
+        <filedep name="/HRMAJAX/DAGS/DAD_LINK.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0F681E4-520B-4629-80B3-13DF20B356F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRMWin</RootNamespace>
+    <AssemblyName>HRMWin</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=0ed4c5f2bbf81ac0, processorArchitecture=MSIL" />
+    <Reference Include="Itworks.Idworks, Version=1.0.2797.28692, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsINI.cs" />
+    <Compile Include="DevicesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevicesList.Designer.cs">
+      <DependentUpon>DevicesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetail.Designer.cs">
+      <DependentUpon>EmployeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesList.Designer.cs">
+      <DependentUpon>EmployeesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormState.cs" />
+    <Compile Include="IProgressCallback.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DevicesList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DevicesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmployeeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmployeesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollingTextControl.resx">
+      <DependentUpon>ScrollingTextControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchByFingerPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchByFingerPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeWorksReception.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimeWorksReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeWorksReception1280.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimeWorksReception1280.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeWorksReceptionConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimeWorksReceptionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraineeDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TraineeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraineeList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TraineeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\HRMBLL.H0.EmployeeIdiFingerPrintBLL.datasource" />
+    <None Include="Properties\DataSources\HRMBLL.H0.EmployeesBLL.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="ScrollingTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScrollingTextControl.Designer.cs">
+      <DependentUpon>ScrollingTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchByFingerPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchByFingerPrint.Designer.cs">
+      <DependentUpon>SearchByFingerPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeWorksReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeWorksReception.Designer.cs">
+      <DependentUpon>TimeWorksReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeWorksReception1280.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeWorksReception1280.Designer.cs">
+      <DependentUpon>TimeWorksReception1280.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeWorksReceptionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeWorksReceptionConfig.Designer.cs">
+      <DependentUpon>TimeWorksReceptionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraineeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraineeDetail.Designer.cs">
+      <DependentUpon>TraineeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraineeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraineeList.Designer.cs">
+      <DependentUpon>TraineeList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\BG\handBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\BG\bg_login_username.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\BG\btnStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\BG\btnStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\BG\bg_login_password.jpg" />
+    <None Include="bin\Debug\Images\BG\bannerload.png" />
+    <None Include="bin\Debug\Images\BG\aaaa.gif" />
+    <None Include="bin\Debug\Images\BG\fingerbuttonbg.png" />
+    <None Include="bin\Debug\Images\BG\fingerbuttonbg1.png" />
+    <None Include="bin\Debug\Images\BG\Error.png" />
+    <None Include="bin\Debug\Images\BG\banner.png" />
+    <None Include="bin\Debug\Images\BG\date1280.png" />
+    <None Include="bin\Debug\Images\BG\fingerscan1280.png" />
+    <None Include="bin\Debug\Images\BG\footerbutton1280.png" />
+    <None Include="bin\Debug\Images\BG\footerInfor1280.png" />
+    <None Include="bin\Debug\Images\BG\banner1280.png" />
+    <None Include="bin\Debug\Images\BG\FingerIndex0.png" />
+    <Content Include="bin\Debug\Images\BG\Icon-Search.gif" />
+    <None Include="bin\Debug\Images\BG\register.png" />
+    <None Include="bin\Debug\Images\BG\search.png" />
+    <None Include="bin\Debug\Images\BG\shutdown.png" />
+    <None Include="bin\Debug\Images\BG\user.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex00.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex0.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex1.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex2.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex3.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex4.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex5.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex11.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex22.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex33.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex44.png" />
+    <None Include="bin\Debug\Images\hands\FingerIndex55.png" />
+    <None Include="bin\Debug\Images\hands\FingerLeft.png" />
+    <None Include="bin\Debug\Images\BG\menubg.png" />
+    <None Include="bin\Debug\Images\BG\menuitembg.png" />
+    <None Include="bin\Debug\Images\BG\time.png" />
+    <None Include="bin\Debug\Images\BG\timeworkbg.png" />
+    <None Include="bin\Debug\Images\BG\timeworkheaderbg.png" />
+    <None Include="bin\Debug\Images\BG\timeworkbg1.png" />
+    <None Include="bin\Debug\Images\BG\restoredownbuttonbg.png" />
+    <None Include="bin\Debug\Images\BG\restoredownbuttonbg1.png" />
+    <None Include="bin\Debug\Images\BG\settingbuttonbg.png" />
+    <None Include="bin\Debug\Images\BG\settingbuttonbg1.png" />
+    <None Include="bin\Debug\Images\BG\out.png" />
+    <None Include="bin\Debug\Images\BG\in.png" />
+    <None Include="bin\Debug\Images\BG\timeworkbg1_1280.png" />
+    <None Include="bin\Debug\Images\BG\waitingScan.png" />
+    <None Include="bin\Debug\Images\BG\timeworkbg2_1280.png" />
+    <None Include="bin\Debug\Images\BG\recordtime1280.png" />
+    <None Include="bin\Debug\Images\BG\userpicture1280.png" />
+    <None Include="bin\Debug\Images\BG\userinfor1280.png" />
+    <None Include="bin\Debug\Images\BG\time1280.png" />
+    <None Include="bin\Debug\Images\BG\timeworkbg2.png" />
+    <None Include="bin\Debug\Images\BG\timewordpn.png" />
+    <Content Include="bin\Debug\Images\Icon\Finger-Icon.ico" />
+    <Content Include="bin\Debug\Images\Icon\Finger-Icon2.ico" />
+    <None Include="bin\Debug\Images\system\Copy of FingerIndex0.png" />
+    <None Include="bin\Debug\Images\system\timein.png" />
+    <None Include="bin\Debug\Images\system\timeout.png" />
+    <None Include="bin\Debug\Images\system\handBG.jpg" />
+    <None Include="bin\Debug\Images\system\waitingScan.png" />
+    <None Include="bin\Debug\Images\system\user.png" />
+    <None Include="bin\Debug\Images\system\timewordpn.png" />
+    <None Include="bin\Debug\Images\system\time.png" />
+    <None Include="bin\Debug\Images\system\shutdown.png" />
+    <None Include="bin\Debug\Images\system\settingbuttonbg.png" />
+    <None Include="bin\Debug\Images\system\settingbuttonbg1.png" />
+    <None Include="bin\Debug\Images\system\search.png" />
+    <None Include="bin\Debug\Images\system\restoredownbuttonbg.png" />
+    <None Include="bin\Debug\Images\system\restoredownbuttonbg1.png" />
+    <None Include="bin\Debug\Images\system\register.png" />
+    <None Include="bin\Debug\Images\system\out.png" />
+    <None Include="bin\Debug\Images\system\menuitembg.png" />
+    <None Include="bin\Debug\Images\system\menubg.png" />
+    <None Include="bin\Debug\Images\system\mainbg.png" />
+    <None Include="bin\Debug\Images\system\in.png" />
+    <None Include="bin\Debug\Images\system\Icon-Search.gif" />
+    <None Include="bin\Debug\Images\system\FingerLeft.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex55.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex44.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex33.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex22.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex11.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex5.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex4.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex3.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex2.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex1.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex0.png" />
+    <None Include="bin\Debug\Images\system\FingerIndex00.png" />
+    <None Include="bin\Debug\Images\system\fingerbuttonbg.png" />
+    <None Include="bin\Debug\Images\system\fingerbuttonbg1.png" />
+    <None Include="bin\Debug\Images\system\Error.png" />
+    <None Include="bin\Debug\Images\system\btnStop.png" />
+    <None Include="bin\Debug\Images\system\btnStart.png" />
+    <None Include="bin\Debug\Images\system\bg_login_username.jpg" />
+    <None Include="bin\Debug\Images\system\bg_login_password.jpg" />
+    <None Include="bin\Debug\Images\system\bannerload.png" />
+    <None Include="bin\Debug\Images\Icon\bg_login_username.jpg" />
+    <None Include="Properties\DataSources\HRMBLL.H2.CandidatesBLL.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRMBLL\HRMBLL.csproj">
+      <Project>{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}</Project>
+      <Name>HRMBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMUtil\HRMUtil.csproj">
+      <Project>{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}</Project>
+      <Name>HRMUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

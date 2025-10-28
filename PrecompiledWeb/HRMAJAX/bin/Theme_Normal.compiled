@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/App_Themes/Normal/" hash="2494adcdd" filehash="e48d8984bb1f0f2" flags="110000" assembly="App_Theme_Normal" type="ASP.Normal">
+    <filedeps>
+        <filedep name="/HRMAJAX/App_Themes/Normal/" />
+    </filedeps>
+</preserve>

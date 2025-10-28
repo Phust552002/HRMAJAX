@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode title="" url="" description="foo">
+    
+    <siteMapNode title="Hệ Thống" url="" description="">
+      <siteMapNode title="Thay đổi mật khẩu"
+						       url="~/ChangePassword.aspx"
+						       description=""/>
+      <siteMapNode title="Thoát hệ thống"
+						       url="~/Logout.aspx"
+						       description=""/>
+    </siteMapNode>
+
+    
+    
+    <siteMapNode title="Thu Nhập" url="" description="">
+      <siteMapNode title="Thu nhập tháng"
+                  url="~/Income/Monthly.aspx"
+                  description=""/>
+      <siteMapNode title="Tiền thưởng"
+                  url="~/Bonus/Bonus.aspx"
+                  description=""/>
+    </siteMapNode>
+    
+    
+    
+    <siteMapNode title="Nhân Viên" url="" description="">
+      <siteMapNode title="Quản lý nhân viên"
+				           url="~/Employee/EmployeesList.aspx"
+				           description=""/>
+      <siteMapNode title="Quản lý hợp đồng"
+				           url="~/Contracts/ListContractEmployees.aspx"
+				           description="" />
+      <siteMapNode title="Quản lý hệ số"
+				           url="~/Coefficients/ListCoefficientEmployees.aspx"
+				           description="" />
+      <siteMapNode title="Quản lý ngày nghỉ"
+				           url="~/Leave/List.aspx"
+				           description="" />
+    </siteMapNode>
+
+    
+    
+    <siteMapNode title="Dữ liệu" url="" description="">
+      <siteMapNode  title="Import lương"
+						        url="~/Data/ImportExcelFile.aspx"
+						        description=""/>
+      <siteMapNode  title="Import tiền thưởng"
+						        url="~/Data/ImportBonus.aspx"
+						        description=""/>
+      
+      <siteMapNode  title="Export bảng lương"
+						        url="~/Data/ExportMonthlyIncome.aspx"
+						        description=""/>
+
+      <siteMapNode  title="Export tiền thưởng"
+						        url="~/Data/ExportBonus.aspx"
+						        description=""/>
+      
+    </siteMapNode>
+
+    
+    
+    <siteMapNode title="Danh mục" url="" description="">
+      <siteMapNode  title="Bảng hệ số lương năng suât"
+						        url="~/Coefficients/ListLNSCoefficient.aspx"
+						        description=""/>
+
+      <siteMapNode  title="Bảng hệ số lương cơ bản"
+						        url="~/Coefficients/ListLCBCoefficient.aspx"
+						        description=""/>
+      
+      <siteMapNode  title="Loại hợp đồng"
+						        url="~/Contracts/List.aspx"
+						        description=""/>
+      
+      <siteMapNode  title="Các chức danh"
+						        url="~/Employee/Positions.aspx"
+						        description=""/>
+      <siteMapNode  title="Các phòng ban"
+                   url="~/Department/Departments.aspx"
+                   description=""/>
+      <siteMapNode  title="Phòng ban - nhân viên"
+                  url="~/Department/DepartmentEmployeeList.aspx"
+                  description=""/>
+      <siteMapNode  title="Danh mục mối quan hệ trong gia đình"
+                  url="~/Catalogue/RelationTypeList.aspx"
+                  description=""/>
+      
+      <siteMapNode  title="Quản lý đơn giá tiền lương"
+						        url="~/CalculatedSalary/ListUnitPrices.aspx"
+						        description=""/>
+      <siteMapNode  title="Quản lý quỹ lương"
+						        url="~/CalculatedSalary/ListWageFunds.aspx"
+						        description=""/>
+      
+      <siteMapNode  title="Nhập ngày công"
+						        url="~/Workdays/WorkdaysList.aspx"
+						        description=""/>
+      
+      <siteMapNode  title="Thiết lập bảng nhập ngày công"
+                   url="~/Workdays/Init.aspx"
+                   description="" />
+      
+      <siteMapNode  title="Danh sách lương"
+                   url="~/CalculatedSalary/List.aspx"
+                   description=""/>
+      
+      <siteMapNode  title="Tính lương cho nhân viên"
+                  url="~/CalculatedSalary/Options.aspx"
+                  description=""/>
+      
+      <siteMapNode  title="Quản lý ngày nghỉ lễ"
+                  url="~/Administrator/Holidays.aspx"
+                  description=""/>
+      <siteMapNode  title="Đợt tuyển dụng"
+                   url="~/Recruitment/Category/Session.aspx"
+                   description=""/>
+      <siteMapNode  title="Trình độ văn hóa"
+                  url="~/Recruitment/Category/EducationLevel.aspx"
+                  description=""/>
+    </siteMapNode>
+    
+    
+    
+    <siteMapNode title="Lương Cụm Cảng" url="" description="">
+      <siteMapNode  title="Danh sách thu nhập tháng"
+						        url="~/Income/ListMonthly.aspx"
+						        description=""/>
+      <siteMapNode  title="Danh sách tiền thưởng"
+						        url="~/Bonus/BonusList.aspx"
+						        description=""/>
+    </siteMapNode>
+
+    <siteMapNode title="Tuyển Dụng" url="" description="">
+     <!-- <siteMapNode title="Danh mục">
+        <siteMapNode  title="Đợt tuyển dụng"
+						        url="~/Recruitment/Category/Session.aspx"
+						        description=""/>
+        <siteMapNode  title="Trình độ văn hóa"
+						        url="~/Recruitment/Category/EducationLevel.aspx"
+						        description=""/>
+      </siteMapNode>-->
+      
+      <siteMapNode  title="Nhận hồ sơ"
+						        url="~/Recruitment/List.aspx"
+						        description=""/>
+      <siteMapNode  title="Kết quả ứng tuyển"
+						        url="~/Recruitment/Results.aspx"
+						        description=""/>
+    </siteMapNode>
+    
+  </siteMapNode>
+</siteMap>

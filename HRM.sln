@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HRM", "HRM\", "{A9795A6C-88B2-4608-AD66-46B98ECD979C}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/HRM/Program/HRMAJAX", QLFAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}|HRMBLL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/HRM"
+		Debug.AspNetCompiler.PhysicalPath = "D:\Sags Projects\HRM\Program\HRM\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\HRM\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/HRM"
+		Release.AspNetCompiler.PhysicalPath = "D:\Sags Projects\HRM\Program\HRM\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\HRM\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4244"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMBLL", "HRMBLL\HRMBLL.csproj", "{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMDAL", "HRMDAL\HRMDAL.csproj", "{B190BD77-0BE9-4345-8106-7C2C21F737FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMUtil", "HRMUtil\HRMUtil.csproj", "{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Debug|.NET.ActiveCfg = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Debug|.NET.Build.0 = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Release|.NET.ActiveCfg = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Release|.NET.Build.0 = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{A9795A6C-88B2-4608-AD66-46B98ECD979C}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Release|.NET.ActiveCfg = Release|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A26740A5-3BFD-4AEF-8C17-1C377A0F878E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Release|.NET.ActiveCfg = Release|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B190BD77-0BE9-4345-8106-7C2C21F737FA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Release|.NET.ActiveCfg = Release|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3F1C1D37-F352-488F-9A43-44BF0CD3A1C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEEC947A-99B3-4469-8C00-9F80D83BFC3F}
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectUniqueName0 = HRMBLL\\HRMBLL.csproj
+		SccProjectName0 = \u0022$/HRM/Program/HRMBLL\u0022,\u0020BOHAAAAA
+		SccLocalPath0 = HRMBLL
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = HRMDAL\\HRMDAL.csproj
+		SccProjectName1 = \u0022$/HRM/Program/HRMDAL\u0022,\u0020NTHAAAAA
+		SccLocalPath1 = HRMDAL
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = HRMUtil\\HRMUtil.csproj
+		SccProjectName2 = \u0022$/HRM/Program/HRMUtil\u0022,\u0020XYHAAAAA
+		SccLocalPath2 = HRMUtil
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccWebProject3 = true
+		SccProjectUniqueName3 = HRM
+		SccProjectName3 = \u0022$/HRM/Program/HRMAJAX\u0022,\u0020QLFAAAAA
+		SccLocalPath3 = E:\\Working\\Sags\u0020Projects\\HRM\\Program\\HRM
+		SccProvider3 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice3 = 2
+	EndGlobalSection
+EndGlobal

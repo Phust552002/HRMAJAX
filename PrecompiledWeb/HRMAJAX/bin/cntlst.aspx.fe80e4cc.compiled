@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Contracts/CntLst.aspx" hash="2494adcdd" filehash="6952a4634e7a40e2" flags="110000" assembly="App_Web_omlgreps" type="ASP.contracts_cntlst_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Contracts/CntLst.aspx" />
+        <filedep name="/HRMAJAX/Contracts/CntLst.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Bonus/UserControls/YearEnd.ascx" hash="2494adcdd" filehash="86c985cfdbee70db" flags="110000" assembly="App_Web_rfolhcfi" type="ASP.bonus_usercontrols_yearend_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Bonus/UserControls/YearEnd.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/YearEnd.ascx.cs" />
+    </filedeps>
+</preserve>

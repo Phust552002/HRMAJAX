@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Employee/UserControls/Contracts.ascx" hash="2494adcdd" filehash="8c24370ef0555993" flags="110000" assembly="App_Web_k1p3phal" type="ASP.employee_usercontrols_contracts_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Contracts/UserControls/Add.ascx" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/Add.ascx.cs" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/History.ascx" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/History.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Contracts.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Contracts.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/DatePicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx.cs" />
+    </filedeps>
+</preserve>

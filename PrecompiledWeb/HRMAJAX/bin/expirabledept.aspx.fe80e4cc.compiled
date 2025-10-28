@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Contracts/ExpirableDept.aspx" hash="2494adcdd" filehash="4cdb110806474000" flags="110000" assembly="App_Web_ik21qyae" type="ASP.contracts_expirabledept_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Contracts/ExpirableDept.aspx" />
+        <filedep name="/HRMAJAX/Contracts/ExpirableDept.aspx.cs" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/ContractFilter.ascx" />
+        <filedep name="/HRMAJAX/Contracts/UserControls/ContractFilter.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/Title.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Title.ascx.cs" />
+    </filedeps>
+</preserve>

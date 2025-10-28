@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Recruitment/RegistrationPrint.aspx" hash="2494adcdd" filehash="8d66450afff339e9" flags="110000" assembly="App_Web_vjwj0ckp" type="ASP.recruitment_registrationprint_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Recruitment/RegistrationPrint.aspx" />
+        <filedep name="/HRMAJAX/Recruitment/RegistrationPrint.aspx.cs" />
+    </filedeps>
+</preserve>

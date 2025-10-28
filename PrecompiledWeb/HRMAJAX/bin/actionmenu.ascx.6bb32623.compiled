@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/ActionMenu.ascx" hash="2494adcdd" filehash="e359147978374473" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_actionmenu_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/ActionMenu.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ActionMenu.ascx.cs" />
+    </filedeps>
+</preserve>

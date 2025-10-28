@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Decisions/Type.aspx" hash="2494adcdd" filehash="2729ff0c89908cec" flags="110000" assembly="App_Web_zdisrp4a" type="ASP.decisions_type_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Decisions/Type.aspx" />
+        <filedep name="/HRMAJAX/Decisions/Type.aspx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx" />
+        <filedep name="/HRMAJAX/UserControls/LeftMenu.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/Title.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Title.ascx.cs" />
+    </filedeps>
+</preserve>

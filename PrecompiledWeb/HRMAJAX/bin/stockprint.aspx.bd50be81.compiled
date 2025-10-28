@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Employee/StockPrint.aspx" hash="2494adcdd" filehash="656b94c3762d2c22" flags="110000" assembly="App_Web_tj3212a3" type="ASP.employee_stockprint_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Employee/StockPrint.aspx" />
+        <filedep name="/HRMAJAX/Employee/StockPrint.aspx.cs" />
+    </filedeps>
+</preserve>

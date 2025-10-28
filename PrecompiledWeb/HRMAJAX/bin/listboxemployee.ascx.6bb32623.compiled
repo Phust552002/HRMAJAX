@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/ListBoxEmployee.ascx" hash="2494adcdd" filehash="4b6fd565f15bbb46" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_listboxemployee_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/ListBoxEmployee.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ListBoxEmployee.ascx.cs" />
+    </filedeps>
+</preserve>

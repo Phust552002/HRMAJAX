@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/UserControls/HeaderContent.ascx" hash="2494adcdd" filehash="24a82ad3d07c94b0" flags="110000" assembly="App_Web_c1afxxg2" type="ASP.usercontrols_headercontent_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/UserControls/HeaderContent.ascx" />
+        <filedep name="/HRMAJAX/UserControls/HeaderContent.ascx.cs" />
+    </filedeps>
+</preserve>

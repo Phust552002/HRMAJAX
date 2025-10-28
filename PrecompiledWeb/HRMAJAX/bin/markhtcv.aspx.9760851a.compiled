@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Workdays/MarkHTCV.aspx" hash="2494adcdd" filehash="7dcdf685cfcf7157" flags="110000" assembly="App_Web_zzx0dbgo" type="ASP.workdays_markhtcv_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx" />
+        <filedep name="/HRMAJAX/UserControls/CalendarPicker.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+        <filedep name="/HRMAJAX/Workdays/MarkHTCV.aspx" />
+        <filedep name="/HRMAJAX/Workdays/MarkHTCV.aspx.cs" />
+    </filedeps>
+</preserve>

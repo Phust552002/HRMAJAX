@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Employee/UserControls/Working.ascx" hash="2494adcdd" filehash="9e43ebc9ee0fff7" flags="110000" assembly="App_Web_k1p3phal" type="ASP.employee_usercontrols_working_ascx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Employee/UserControls/Working.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Working.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Working/BreachOfDiscipline.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Working/BreachOfDiscipline.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Working/JobHistory.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Working/JobHistory.ascx.cs" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Working/Reward.ascx" />
+        <filedep name="/HRMAJAX/Employee/UserControls/Working/Reward.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx" />
+        <filedep name="/HRMAJAX/UserControls/TabSub.ascx.cs" />
+    </filedeps>
+</preserve>

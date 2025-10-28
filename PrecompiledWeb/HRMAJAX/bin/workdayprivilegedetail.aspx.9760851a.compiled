@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Workdays/WorkdayPrivilegeDetail.aspx" hash="2494adcdd" filehash="d5db4a5c93681f24" flags="110000" assembly="App_Web_op225dgh" type="ASP.workdays_workdayprivilegedetail_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx" />
+        <filedep name="/HRMAJAX/UserControls/MessageError.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+        <filedep name="/HRMAJAX/Workdays/WorkdayPrivilegeDetail.aspx" />
+        <filedep name="/HRMAJAX/Workdays/WorkdayPrivilegeDetail.aspx.cs" />
+    </filedeps>
+</preserve>

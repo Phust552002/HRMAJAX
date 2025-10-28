@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/HRMAJAX/Bonus/Bonus.aspx" hash="2494adcdd" filehash="cad2e3585bf73d92" flags="110000" assembly="App_Web_1ofh0yga" type="ASP.bonus_bonus_aspx">
+    <filedeps>
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx" />
+        <filedep name="/HRMAJAX/Administrator/UserControls/ucPermission.ascx.cs" />
+        <filedep name="/HRMAJAX/Bonus/Bonus.aspx" />
+        <filedep name="/HRMAJAX/Bonus/Bonus.aspx.cs" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/BSDT.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/BSDT.ascx.cs" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/BSMiddleYear.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/BSMiddleYear.ascx.cs" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/Holidays.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/Holidays.ascx.cs" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/SafeAviation.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/SafeAviation.ascx.cs" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/YearEnd.ascx" />
+        <filedep name="/HRMAJAX/Bonus/UserControls/YearEnd.ascx.cs" />
+        <filedep name="/HRMAJAX/HRM.master" />
+        <filedep name="/HRMAJAX/HRM.master.cs" />
+        <filedep name="/HRMAJAX/UserControls/Tabs.ascx" />
+        <filedep name="/HRMAJAX/UserControls/Tabs.ascx.cs" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx" />
+        <filedep name="/HRMAJAX/UserControls/ucTitle.ascx.cs" />
+    </filedeps>
+</preserve>

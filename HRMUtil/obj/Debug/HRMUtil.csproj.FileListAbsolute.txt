@@ -1,0 +1,86 @@
+E:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\bin\Debug\HRMUtil.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\bin\Debug\HRMUtil.pdb
+E:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\obj\Debug\HRMUtil.dll
+E:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\obj\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\obj\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_09May13\HRMUtil\obj\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMUtil\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMUtil\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMUtil\obj\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\Program_27Dec14\HRMUtil\obj\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.dll
+F:\Working\Sags Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.pdb
+F:\Working\Sags Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csprojResolveAssemblyReference.cache
+F:\Projects\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.dll
+F:\Projects\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.pdb
+F:\Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.dll
+F:\Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.pdb
+F:\Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csprojResolveAssemblyReference.cache
+D:\Projects\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.dll
+D:\Projects\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.pdb
+D:\Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.dll
+D:\Projects\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.pdb
+D:\Projects\Giang\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.dll
+D:\Projects\Giang\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.pdb
+D:\Projects\Giang\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.dll
+D:\Projects\Giang\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.pdb
+D:\Projects\Giang\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csprojAssemblyReference.cache
+D:\Projects\Giang\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.CoreCompileInputs.cache
+D:\Projects\Giang\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.dll
+D:\Projects\Giang\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.dll
+D:\Projects\Giang\HRM\WEB\HRMUtil\bin\Debug\TelerikCommon.dll
+D:\Projects\Giang\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.xml
+D:\Projects\Giang\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.xml
+D:\Projects\Giang\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.CopyComplete
+C:\SAGS\TEST\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.dll
+C:\SAGS\TEST\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.pdb
+C:\SAGS\TEST\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.dll
+C:\SAGS\TEST\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.dll
+C:\SAGS\TEST\HRM\WEB\HRMUtil\bin\Debug\TelerikCommon.dll
+C:\SAGS\TEST\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.xml
+C:\SAGS\TEST\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.xml
+C:\SAGS\TEST\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.AssemblyReference.cache
+C:\SAGS\TEST\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.CoreCompileInputs.cache
+C:\SAGS\TEST\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.CopyComplete
+C:\SAGS\TEST\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.dll
+C:\SAGS\TEST\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.pdb
+C:\SAGS\Software\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.dll
+C:\SAGS\Software\HRM\WEB\HRMUtil\bin\Debug\HRMUtil.pdb
+C:\SAGS\Software\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.dll
+C:\SAGS\Software\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.dll
+C:\SAGS\Software\HRM\WEB\HRMUtil\bin\Debug\TelerikCommon.dll
+C:\SAGS\Software\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.xml
+C:\SAGS\Software\HRM\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.xml
+C:\SAGS\Software\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.AssemblyReference.cache
+C:\SAGS\Software\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.CoreCompileInputs.cache
+C:\SAGS\Software\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.Up2Date
+C:\SAGS\Software\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.dll
+C:\SAGS\Software\HRM\WEB\HRMUtil\obj\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\bin\Debug\HRMUtil.dll
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\bin\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\bin\Debug\Telerik.WinControls.dll
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\bin\Debug\TelerikCommon.dll
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\bin\Debug\Telerik.WinControls.xml
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.CoreCompileInputs.cache
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.CopyComplete
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\obj\Debug\HRMUtil.dll
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\obj\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Desktop\WEB\HRMUtil\obj\Debug\HRMUtil.csproj.AssemblyReference.cache
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\bin\Debug\HRMUtil.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\bin\Debug\HRMUtil.pdb
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\bin\Debug\Telerik.WinControls.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\bin\Debug\TelerikCommon.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\bin\Debug\Telerik.WinControls.xml
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.csproj.CoreCompileInputs.cache
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.csproj.CopyComplete
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.dll
+C:\Users\haunguyen\Documents\GitLab\Source\hrm_web\HRMUtil\obj\Debug\HRMUtil.pdb
